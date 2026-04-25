@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useRef, useEffect } from "react"
 import {
   ArrowRight,
   ShieldCheck,
@@ -25,9 +26,31 @@ import {
   UserPlus,
   X,
   Star,
+  Check,
 } from "lucide-react"
 
+const languages = [
+  { code: "EN", name: "English", flag: "🇺🇸" },
+  { code: "中文", name: "Chinese", flag: "🇨🇳" },
+  { code: "ID", name: "Indonesian", flag: "🇮🇩" },
+]
+
 export default function UcardLandingPage() {
+  const [selectedLang, setSelectedLang] = useState(languages[0])
+  const [langDropdownOpen, setLangDropdownOpen] = useState(false)
+  const langDropdownRef = useRef<HTMLDivElement>(null)
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (langDropdownRef.current && !langDropdownRef.current.contains(event.target as Node)) {
+        setLangDropdownOpen(false)
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [])
+
   return (
     <main className="min-h-screen bg-[#F8FAFC] text-slate-950">
       {/* NAV */}
@@ -59,11 +82,43 @@ export default function UcardLandingPage() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <button className="hidden cursor-pointer items-center gap-1 text-sm font-medium text-slate-600 transition hover:text-slate-900 md:flex">
-            <Globe2 size={16} />
-            EN
-            <ChevronDown size={14} />
-          </button>
+          {/* Language Selector */}
+          <div className="relative hidden md:block" ref={langDropdownRef}>
+            <button 
+              onClick={() => setLangDropdownOpen(!langDropdownOpen)}
+              className="flex cursor-pointer items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900"
+            >
+              <Globe2 size={16} />
+              <span>{selectedLang.flag}</span>
+              <span>{selectedLang.code}</span>
+              <ChevronDown size={14} className={`transition-transform ${langDropdownOpen ? "rotate-180" : ""}`} />
+            </button>
+            
+            {langDropdownOpen && (
+              <div className="absolute right-0 top-full z-50 mt-2 w-44 rounded-lg border border-slate-200 bg-white py-1 shadow-lg">
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => {
+                      setSelectedLang(lang)
+                      setLangDropdownOpen(false)
+                    }}
+                    className="flex w-full cursor-pointer items-center justify-between px-3 py-2 text-left text-sm transition hover:bg-slate-50"
+                  >
+                    <div className="flex items-center gap-2">
+                      <span>{lang.flag}</span>
+                      <span className="font-medium text-slate-900">{lang.name}</span>
+                      <span className="text-slate-400">({lang.code})</span>
+                    </div>
+                    {selectedLang.code === lang.code && (
+                      <Check size={14} className="text-[#2563EB]" />
+                    )}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+          
           <button className="cursor-pointer rounded-md bg-[#1E3A8A] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90">
             Get Ucard <ArrowRight className="ml-1 inline h-4 w-4" />
           </button>
