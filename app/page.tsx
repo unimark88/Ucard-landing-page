@@ -50,21 +50,21 @@ export default function UcardLandingPage() {
         </div>
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 lg:flex">
-          <a href="#" className="hover:text-slate-900">Products</a>
-          <a href="#" className="hover:text-slate-900">Features</a>
-          <a href="#" className="hover:text-slate-900">Rewards</a>
-          <a href="#" className="hover:text-slate-900">Agents</a>
-          <a href="#" className="hover:text-slate-900">About Us</a>
-          <a href="#" className="hover:text-slate-900">Help</a>
+          <a href="#" className="cursor-pointer transition hover:text-slate-900">Products</a>
+          <a href="#" className="cursor-pointer transition hover:text-slate-900">Features</a>
+          <a href="#" className="cursor-pointer transition hover:text-slate-900">Rewards</a>
+          <a href="#" className="cursor-pointer transition hover:text-slate-900">Agents</a>
+          <a href="#" className="cursor-pointer transition hover:text-slate-900">About Us</a>
+          <a href="#" className="cursor-pointer transition hover:text-slate-900">Help</a>
         </nav>
 
         <div className="flex items-center gap-4">
-          <button className="hidden items-center gap-1 text-sm font-medium text-slate-600 md:flex">
+          <button className="hidden cursor-pointer items-center gap-1 text-sm font-medium text-slate-600 transition hover:text-slate-900 md:flex">
             <Globe2 size={16} />
             EN
             <ChevronDown size={14} />
           </button>
-          <button className="rounded-md bg-[#1E3A8A] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90">
+          <button className="cursor-pointer rounded-md bg-[#1E3A8A] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90">
             Get Ucard <ArrowRight className="ml-1 inline h-4 w-4" />
           </button>
         </div>
@@ -93,10 +93,10 @@ export default function UcardLandingPage() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <button className="flex items-center gap-2 rounded-md bg-[#1E3A8A] px-6 py-3.5 font-semibold text-white shadow-xl shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90">
+            <button className="flex cursor-pointer items-center gap-2 rounded-md bg-[#1E3A8A] px-6 py-3.5 font-semibold text-white shadow-xl shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90">
               Get Your Ucard <ArrowRight size={18} />
             </button>
-            <button className="rounded-md border border-slate-300 bg-white px-6 py-3.5 font-semibold text-slate-900 transition hover:bg-slate-50">
+            <button className="cursor-pointer rounded-md border border-slate-300 bg-white px-6 py-3.5 font-semibold text-slate-900 transition hover:bg-slate-50">
               Learn More
             </button>
           </div>
@@ -201,7 +201,7 @@ export default function UcardLandingPage() {
               <div className="mt-4">
                 <div className="mb-2 flex items-center justify-between">
                   <span className="text-xs font-semibold text-slate-900">Recent Transactions</span>
-                  <span className="text-[10px] text-[#2563EB]">View all</span>
+                  <span className="cursor-pointer text-[10px] text-[#2563EB] transition hover:underline">View all</span>
                 </div>
                 <div className="space-y-2.5">
                   {[
@@ -417,18 +417,18 @@ export default function UcardLandingPage() {
           </div>
 
           <div className="mt-8 flex gap-3">
-            <button className="flex items-center gap-2 rounded-md bg-slate-900 px-5 py-3 text-sm font-medium text-white">
-              <Apple size={20} />
+            <button className="flex cursor-pointer items-center gap-2 rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800">
+              <Apple size={18} />
               <div className="text-left">
-                <p className="text-[8px] opacity-70">Download on the</p>
-                <p className="text-sm font-semibold">App Store</p>
+                <p className="text-[7px] leading-tight opacity-70">Download on the</p>
+                <p className="text-xs font-semibold leading-tight">App Store</p>
               </div>
             </button>
-            <button className="flex items-center gap-2 rounded-md border border-slate-300 bg-white px-5 py-3 text-sm font-medium">
-              <Play size={20} className="fill-current" />
+            <button className="flex cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium transition hover:bg-slate-50">
+              <Play size={18} className="fill-current" />
               <div className="text-left">
-                <p className="text-[8px] text-slate-500">GET IT ON</p>
-                <p className="text-sm font-semibold">Google Play</p>
+                <p className="text-[7px] leading-tight text-slate-500">GET IT ON</p>
+                <p className="text-xs font-semibold leading-tight">Google Play</p>
               </div>
             </button>
           </div>
@@ -451,7 +451,7 @@ export default function UcardLandingPage() {
             <p className="mt-4 max-w-md text-slate-600">
               Complete missions. Earn points. Invite friends. Unlock levels and exclusive rewards.
             </p>
-            <button className="mt-6 inline-flex w-fit items-center gap-2 rounded-md border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-900 transition hover:bg-slate-50">
+            <button className="mt-6 inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-900 transition hover:bg-slate-50">
               Explore Rewards <ArrowRight size={16} />
             </button>
           </div>
@@ -616,7 +616,7 @@ export default function UcardLandingPage() {
               </p>
             </div>
           </div>
-          <button className="rounded-md bg-[#1E3A8A] px-6 py-3 font-semibold text-white transition hover:bg-[#1E3A8A]/90">
+          <button className="cursor-pointer rounded-md bg-[#1E3A8A] px-6 py-3 font-semibold text-white transition hover:bg-[#1E3A8A]/90">
             Become a Partner <ArrowRight className="ml-1 inline h-4 w-4" />
           </button>
         </div>
@@ -633,7 +633,7 @@ export default function UcardLandingPage() {
             Start Spending Your USDT Today
           </h2>
           <p className="relative mt-3 text-blue-200">Simple. Secure. Global.</p>
-          <button className="relative mt-6 inline-flex items-center gap-2 rounded-md bg-white px-7 py-3.5 font-bold text-[#1E3A8A] transition hover:bg-slate-100">
+          <button className="relative mt-6 inline-flex cursor-pointer items-center gap-2 rounded-md bg-white px-7 py-3.5 font-bold text-[#1E3A8A] transition hover:bg-slate-100">
             Get Your Ucard <ArrowRight size={18} />
           </button>
         </div>
@@ -665,7 +665,7 @@ export default function UcardLandingPage() {
             </p>
             <div className="mt-4 flex gap-3">
               {[X, Send, Users, Globe2].map((Icon, i) => (
-                <a key={i} href="#" className="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-100 text-slate-600 transition hover:bg-slate-200">
+                <a key={i} href="#" className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg bg-slate-100 text-slate-600 transition hover:bg-slate-200">
                   <Icon size={14} />
                 </a>
               ))}
@@ -682,7 +682,7 @@ export default function UcardLandingPage() {
               <h4 className="font-bold text-slate-900">{col.title}</h4>
               <div className="mt-3 space-y-2">
                 {col.items.map((item) => (
-                  <a key={item} href="#" className="block text-sm text-slate-500 hover:text-slate-700">
+                  <a key={item} href="#" className="block cursor-pointer text-sm text-slate-500 transition hover:text-slate-700">
                     {item}
                   </a>
                 ))}
@@ -700,7 +700,7 @@ export default function UcardLandingPage() {
                 placeholder="Enter your email"
                 className="flex-1 bg-transparent text-sm outline-none placeholder:text-slate-400"
               />
-              <ArrowRight size={16} className="text-slate-400" />
+              <ArrowRight size={16} className="cursor-pointer text-slate-400 transition hover:text-slate-600" />
             </div>
           </div>
         </div>
@@ -717,7 +717,7 @@ export default function UcardLandingPage() {
 
 function FeatureCard({ icon, title, desc }: { icon: React.ReactNode; title: string; desc: string }) {
   return (
-    <div className="rounded-2xl bg-[#EFF6FF] p-6 text-center transition hover:-translate-y-1 hover:shadow-lg">
+    <div className="cursor-pointer rounded-2xl bg-[#EFF6FF] p-6 text-center transition hover:-translate-y-1 hover:shadow-lg">
       <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#2563EB] shadow-sm">
         {icon}
       </div>
