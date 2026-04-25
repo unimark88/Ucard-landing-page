@@ -71,7 +71,12 @@ export default function UcardLandingPage() {
       </header>
 
       {/* HERO */}
-      <section className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 pb-20 pt-8 lg:grid-cols-2">
+      <section className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 overflow-hidden px-6 pb-20 pt-8 lg:grid-cols-2">
+        {/* Background glow effects */}
+        <div className="pointer-events-none absolute -left-40 top-20 h-[400px] w-[400px] rounded-full bg-gradient-to-br from-blue-400/30 to-blue-600/20 blur-[100px]" />
+        <div className="pointer-events-none absolute -right-20 top-40 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-blue-300/40 to-blue-500/30 blur-[120px]" />
+        <div className="pointer-events-none absolute left-1/3 top-0 h-[300px] w-[300px] rounded-full bg-blue-200/50 blur-[80px]" />
+        
         <div>
           <div className="mb-6 inline-flex rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-[#1E3A8A]">
             The USDT Card for Everyday Life
@@ -129,7 +134,8 @@ export default function UcardLandingPage() {
 
         {/* HERO MOCKUP */}
         <div className="relative flex justify-center lg:justify-end">
-          <div className="absolute -right-20 top-0 h-[500px] w-[500px] rounded-full bg-blue-100/60 blur-3xl" />
+          <div className="absolute -right-10 top-10 h-[350px] w-[350px] rounded-full bg-gradient-to-br from-blue-400/40 to-blue-600/30 blur-[80px]" />
+          <div className="absolute -left-20 bottom-20 h-[250px] w-[250px] rounded-full bg-gradient-to-tr from-blue-300/30 to-blue-500/20 blur-[60px]" />
 
           {/* Card */}
           <div className="absolute -left-4 top-32 z-20 h-52 w-80 rotate-[-12deg] rounded-2xl bg-gradient-to-br from-[#0a1628] to-[#1E3A8A] p-6 text-white shadow-2xl lg:left-0">
@@ -288,8 +294,12 @@ export default function UcardLandingPage() {
       </section>
 
       {/* FEATURES */}
-      <section className="mx-auto max-w-7xl px-6 pb-20">
-        <h2 className="text-center text-3xl font-extrabold tracking-tight">
+      <section className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-20">
+        {/* Background glow */}
+        <div className="pointer-events-none absolute -right-60 top-0 h-[300px] w-[300px] rounded-full bg-gradient-to-br from-blue-400/20 to-blue-600/10 blur-[80px]" />
+        <div className="pointer-events-none absolute -left-40 bottom-0 h-[250px] w-[250px] rounded-full bg-gradient-to-tr from-blue-300/20 to-blue-500/10 blur-[70px]" />
+        
+        <h2 className="relative text-center text-3xl font-extrabold tracking-tight">
           Everything You Need in One Card
         </h2>
 
@@ -318,9 +328,13 @@ export default function UcardLandingPage() {
       </section>
 
       {/* APP EXPERIENCE */}
-      <section className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 pb-20 lg:grid-cols-2">
+      <section className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 overflow-hidden px-6 pb-20 lg:grid-cols-2">
+        {/* Background glow */}
+        <div className="pointer-events-none absolute -left-40 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-gradient-to-br from-blue-400/25 to-blue-600/15 blur-[100px]" />
+        
         <div className="relative flex justify-center">
-          <div className="absolute h-80 w-80 rounded-full bg-blue-50 blur-3xl" />
+          <div className="absolute h-[350px] w-[350px] rounded-full bg-gradient-to-br from-blue-300/40 to-blue-500/30 blur-[80px]" />
+          <div className="absolute -right-10 top-20 h-[200px] w-[200px] rounded-full bg-gradient-to-tr from-blue-400/30 to-blue-300/20 blur-[60px]" />
           
           {/* Phone with Card */}
           <div className="relative w-72 rounded-[2.5rem] border-[8px] border-slate-900 bg-white shadow-2xl">
@@ -422,8 +436,11 @@ export default function UcardLandingPage() {
       </section>
 
       {/* REWARDS */}
-      <section className="mx-auto max-w-7xl px-6 pb-20">
-        <div className="grid gap-8 rounded-3xl bg-blue-50 p-8 lg:grid-cols-2 lg:p-10">
+      <section className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-20">
+        {/* Background glow */}
+        <div className="pointer-events-none absolute -right-40 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-gradient-to-bl from-blue-400/30 to-blue-600/20 blur-[100px]" />
+        
+        <div className="relative grid gap-8 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 lg:grid-cols-2 lg:p-10">
           <div className="flex flex-col justify-center">
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
               Level up your experience
@@ -505,7 +522,9 @@ export default function UcardLandingPage() {
       </section>
 
       {/* SECURITY + GLOBAL */}
-      <section className="mx-auto grid max-w-7xl gap-6 px-6 pb-10 md:grid-cols-2">
+      <section className="relative mx-auto grid max-w-7xl gap-6 overflow-hidden px-6 pb-10 md:grid-cols-2">
+        {/* Background glow */}
+        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-blue-400/15 to-blue-600/10 blur-[80px]" />
         <div className="rounded-2xl bg-white p-8 shadow-sm">
           <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
             Built for Trust
@@ -603,14 +622,18 @@ export default function UcardLandingPage() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
+      {/* FINAL CTA - with glow effects */}
       <section className="mx-auto max-w-7xl px-6 pb-16">
-        <div className="rounded-2xl bg-gradient-to-r from-[#1E3A8A] to-[#2563EB] px-8 py-12 text-center text-white">
-          <h2 className="text-3xl font-extrabold md:text-4xl">
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#1E3A8A] to-[#2563EB] px-8 py-12 text-center text-white">
+          {/* Glow orbs */}
+          <div className="pointer-events-none absolute -left-20 -top-20 h-[200px] w-[200px] rounded-full bg-blue-400/30 blur-[60px]" />
+          <div className="pointer-events-none absolute -bottom-20 -right-20 h-[250px] w-[250px] rounded-full bg-blue-300/25 blur-[80px]" />
+          <div className="pointer-events-none absolute left-1/2 top-0 h-[150px] w-[150px] -translate-x-1/2 rounded-full bg-white/10 blur-[50px]" />
+          <h2 className="relative text-3xl font-extrabold md:text-4xl">
             Start Spending Your USDT Today
           </h2>
-          <p className="mt-3 text-blue-200">Simple. Secure. Global.</p>
-          <button className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 font-bold text-[#1E3A8A] transition hover:bg-slate-100">
+          <p className="relative mt-3 text-blue-200">Simple. Secure. Global.</p>
+          <button className="relative mt-6 inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 font-bold text-[#1E3A8A] transition hover:bg-slate-100">
             Get Your Ucard <ArrowRight size={18} />
           </button>
         </div>
