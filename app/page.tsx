@@ -240,43 +240,44 @@ export default function UcardLandingPage() {
 
       {/* TRUST BAR */}
       <section className="mx-auto max-w-7xl px-6 pb-20">
-        <div className="grid gap-6 rounded-2xl bg-white p-8 shadow-lg shadow-slate-200/50 md:grid-cols-5">
+        <div className="grid gap-6 rounded-2xl bg-[#EFF6FF] p-8 shadow-sm md:grid-cols-5">
           <div className="md:col-span-1">
-            <h3 className="text-lg font-bold leading-snug">Regulated & Trusted Infrastructure</h3>
+            <h3 className="text-lg font-bold leading-snug">Regulated &<br />Trusted Infrastructure</h3>
             <p className="mt-2 text-sm leading-relaxed text-slate-500">
               Powered by licensed partners and global payment networks. Fully KYC / AML compliant with secure on-chain transparency.
             </p>
           </div>
 
-          <div className="flex items-center justify-center border-slate-100 md:border-l">
+          <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
             <div className="text-center">
-              <div className="text-2xl font-black italic text-[#1a1f71]">VISA</div>
+              <div className="text-3xl font-black italic text-[#1a1f71]">VISA</div>
               <p className="mt-1 text-xs text-slate-400">Global Payment Network</p>
             </div>
           </div>
 
-          <div className="flex items-center justify-center border-slate-100 md:border-l">
+          <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
             <div className="text-center">
-              <div className="flex items-center justify-center gap-1">
-                <div className="h-6 w-6 rounded-full bg-red-500" />
-                <div className="-ml-2 h-6 w-6 rounded-full bg-orange-400" />
+              <div className="flex items-center justify-center">
+                <div className="h-7 w-7 rounded-full bg-red-500" />
+                <div className="-ml-2.5 h-7 w-7 rounded-full bg-orange-400 opacity-80" />
               </div>
               <p className="mt-2 text-xs text-slate-400">Licensed Partner</p>
             </div>
           </div>
 
-          <div className="flex items-center justify-center border-slate-100 md:border-l">
+          <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
             <div className="text-center">
               <div className="text-lg font-bold text-slate-900">
                 <span className="text-[#2563EB]">∞</span> sumsub
               </div>
-              <p className="mt-1 text-xs text-slate-400">KYC / AML Verified</p>
+              <p className="mt-1 text-xs text-slate-400">KYC / AML</p>
+              <p className="text-[10px] text-slate-300">Verified</p>
             </div>
           </div>
 
-          <div className="flex items-center justify-center border-slate-100 md:border-l">
+          <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
             <div className="text-center">
-              <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full border-2 border-slate-200">
+              <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full border-2 border-slate-300">
                 <ShieldCheck className="h-5 w-5 text-slate-400" />
               </div>
               <p className="mt-2 text-xs text-slate-400">256-bit Encryption</p>
@@ -288,7 +289,7 @@ export default function UcardLandingPage() {
 
       {/* FEATURES */}
       <section className="mx-auto max-w-7xl px-6 pb-20">
-        <h2 className="text-center text-3xl font-extrabold">
+        <h2 className="text-center text-3xl font-extrabold tracking-tight">
           Everything You Need in One Card
         </h2>
 
@@ -439,13 +440,16 @@ export default function UcardLandingPage() {
           </div>
 
           <div className="flex items-center justify-center">
-            <div className="relative">
+            <div className="relative py-8 lg:py-0">
               {/* Gift boxes decoration */}
-              <div className="absolute -right-8 -top-8 h-16 w-16 rounded-xl bg-gradient-to-br from-[#2563EB] to-[#60A5FA] p-3 shadow-lg">
-                <Gift className="h-full w-full text-white" />
+              <div className="absolute -right-4 -top-4 z-10 flex h-14 w-14 rotate-6 items-center justify-center rounded-xl bg-gradient-to-br from-[#2563EB] to-[#60A5FA] shadow-xl lg:-right-12 lg:-top-6 lg:h-16 lg:w-16">
+                <Gift className="h-7 w-7 text-white lg:h-8 lg:w-8" />
               </div>
-              <div className="absolute -bottom-4 -right-4 h-12 w-12 rounded-lg bg-gradient-to-br from-yellow-400 to-orange-400 p-2 shadow-lg">
-                <Star className="h-full w-full text-white" />
+              <div className="absolute -bottom-2 -right-2 z-10 flex h-10 w-10 -rotate-12 items-center justify-center rounded-lg bg-gradient-to-br from-yellow-400 to-orange-400 shadow-xl lg:-bottom-4 lg:-right-6 lg:h-12 lg:w-12">
+                <Star className="h-5 w-5 text-white lg:h-6 lg:w-6" />
+              </div>
+              <div className="absolute -left-4 top-1/2 z-10 flex h-10 w-10 rotate-12 -translate-y-1/2 items-center justify-center rounded-lg bg-gradient-to-br from-[#2563EB] to-[#93C5FD] shadow-xl lg:-left-10 lg:h-12 lg:w-12">
+                <Gift className="h-5 w-5 text-white lg:h-6 lg:w-6" />
               </div>
 
               <div className="w-80 rounded-2xl border border-slate-200 bg-white p-5 shadow-xl">
@@ -507,7 +511,7 @@ export default function UcardLandingPage() {
             Built for Trust
           </p>
           <h3 className="mt-2 text-2xl font-extrabold">Security You Can Rely On</h3>
-          <div className="mt-6 flex items-start gap-6">
+          <div className="mt-6 flex items-start justify-between gap-6">
             <div className="space-y-3">
               {[
                 "Licensed partners & regulated infrastructure",
@@ -516,16 +520,24 @@ export default function UcardLandingPage() {
                 "Transparent smart contract integration",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2">
-                  <div className="flex h-4 w-4 items-center justify-center rounded-full bg-[#2563EB]">
+                  <div className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#2563EB]">
                     <CheckCircle className="h-2.5 w-2.5 text-white" />
                   </div>
                   <span className="text-sm text-slate-600">{item}</span>
                 </div>
               ))}
             </div>
-            <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200">
-              <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-gradient-to-br from-slate-200 to-slate-300">
-                <Lock className="h-8 w-8 text-[#2563EB]" />
+            {/* 3D Shield */}
+            <div className="relative shrink-0">
+              <div className="h-28 w-28 rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 p-4">
+                <div className="flex h-full w-full items-center justify-center rounded-xl bg-gradient-to-br from-slate-200 to-slate-300 shadow-inner">
+                  <div className="relative">
+                    <ShieldCheck className="h-10 w-10 text-slate-400" />
+                    <div className="absolute -bottom-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-[#2563EB]">
+                      <Lock className="h-2.5 w-2.5 text-white" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -539,19 +551,33 @@ export default function UcardLandingPage() {
           <p className="mt-3 text-sm text-slate-600">
             Online. Offline. Borderless. Your USDT, now truly spendable.
           </p>
-          <div className="mt-6 flex h-32 items-center justify-center rounded-xl bg-slate-50">
-            <div className="relative w-full max-w-[200px]">
-              <svg viewBox="0 0 200 100" className="w-full text-slate-300">
-                <ellipse cx="100" cy="50" rx="95" ry="45" fill="none" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2,2" />
-                <ellipse cx="100" cy="50" rx="70" ry="33" fill="none" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2,2" />
-                <ellipse cx="100" cy="50" rx="45" ry="21" fill="none" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2,2" />
+          <div className="mt-6 flex h-32 items-center justify-center">
+            <div className="relative w-full max-w-[220px]">
+              {/* World map outline */}
+              <svg viewBox="0 0 200 100" className="w-full text-slate-200">
+                <ellipse cx="100" cy="50" rx="95" ry="45" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="3,3" />
+                <ellipse cx="100" cy="50" rx="70" ry="33" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="3,3" />
+                <ellipse cx="100" cy="50" rx="45" ry="21" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="3,3" />
               </svg>
-              {/* Location pins */}
-              <div className="absolute left-[20%] top-[30%] h-2 w-2 rounded-full bg-[#2563EB]" />
-              <div className="absolute left-[45%] top-[25%] h-2 w-2 rounded-full bg-[#2563EB]" />
-              <div className="absolute left-[70%] top-[35%] h-2 w-2 rounded-full bg-[#2563EB]" />
-              <div className="absolute left-[30%] top-[55%] h-2 w-2 rounded-full bg-[#2563EB]" />
-              <div className="absolute left-[80%] top-[50%] h-2 w-2 rounded-full bg-[#2563EB]" />
+              {/* Location pins with pulse effect */}
+              <div className="absolute left-[15%] top-[25%]">
+                <div className="h-2.5 w-2.5 rounded-full bg-[#2563EB] shadow-lg shadow-blue-500/50" />
+              </div>
+              <div className="absolute left-[42%] top-[20%]">
+                <div className="h-2.5 w-2.5 rounded-full bg-[#2563EB] shadow-lg shadow-blue-500/50" />
+              </div>
+              <div className="absolute left-[72%] top-[30%]">
+                <div className="h-2.5 w-2.5 rounded-full bg-[#2563EB] shadow-lg shadow-blue-500/50" />
+              </div>
+              <div className="absolute left-[28%] top-[55%]">
+                <div className="h-2.5 w-2.5 rounded-full bg-[#2563EB] shadow-lg shadow-blue-500/50" />
+              </div>
+              <div className="absolute left-[82%] top-[50%]">
+                <div className="h-2.5 w-2.5 rounded-full bg-[#2563EB] shadow-lg shadow-blue-500/50" />
+              </div>
+              <div className="absolute left-[55%] top-[60%]">
+                <div className="h-2.5 w-2.5 rounded-full bg-[#2563EB] shadow-lg shadow-blue-500/50" />
+              </div>
             </div>
           </div>
         </div>
@@ -592,8 +618,8 @@ export default function UcardLandingPage() {
 
       {/* FOOTER */}
       <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-12 md:grid-cols-6">
-          <div className="md:col-span-2">
+        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-12 lg:grid-cols-7">
+          <div className="lg:col-span-2">
             <div className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#1E3A8A] to-[#3B82F6]">
                 <svg
@@ -610,7 +636,7 @@ export default function UcardLandingPage() {
               </div>
               <span className="text-lg font-bold">Ucard</span>
             </div>
-            <p className="mt-3 text-sm text-slate-500">
+            <p className="mt-3 text-sm leading-relaxed text-slate-500">
               The USDT card for everyday life.<br />
               Spend, earn, and grow — all in one.
             </p>
@@ -640,24 +666,25 @@ export default function UcardLandingPage() {
               </div>
             </div>
           ))}
+
+          {/* Newsletter Column */}
+          <div>
+            <h4 className="font-bold text-slate-900">Subscribe to our newsletter</h4>
+            <p className="mt-2 text-sm text-slate-500">Get the latest updates and offers.</p>
+            <div className="mt-4 flex items-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2.5">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1 bg-transparent text-sm outline-none placeholder:text-slate-400"
+              />
+              <ArrowRight size={16} className="text-slate-400" />
+            </div>
+          </div>
         </div>
 
         <div className="border-t border-slate-100">
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <div className="mx-auto max-w-7xl px-6 py-4">
             <p className="text-xs text-slate-400">© 2024 Ucard. All rights reserved.</p>
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2 text-sm">
-                <span className="text-slate-500">Subscribe to our newsletter</span>
-                <div className="flex items-center rounded-full border border-slate-200 bg-white px-3 py-1.5">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="w-40 bg-transparent text-sm outline-none placeholder:text-slate-400"
-                  />
-                  <ArrowRight size={14} className="text-slate-400" />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </footer>
@@ -667,8 +694,8 @@ export default function UcardLandingPage() {
 
 function FeatureCard({ icon, title, desc }: { icon: React.ReactNode; title: string; desc: string }) {
   return (
-    <div className="rounded-2xl bg-white p-6 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-      <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-[#2563EB]">
+    <div className="rounded-2xl bg-[#EFF6FF] p-6 text-center transition hover:-translate-y-1 hover:shadow-lg">
+      <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#2563EB] shadow-sm">
         {icon}
       </div>
       <h3 className="font-bold text-slate-900">{title}</h3>
