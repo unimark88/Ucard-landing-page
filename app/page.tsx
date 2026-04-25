@@ -64,7 +64,7 @@ export default function UcardLandingPage() {
             EN
             <ChevronDown size={14} />
           </button>
-          <button className="rounded-xl bg-[#1E3A8A] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90">
+          <button className="rounded-md bg-[#1E3A8A] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90">
             Get Ucard <ArrowRight className="ml-1 inline h-4 w-4" />
           </button>
         </div>
@@ -78,7 +78,7 @@ export default function UcardLandingPage() {
         <div className="pointer-events-none absolute left-1/3 top-0 h-[300px] w-[300px] rounded-full bg-blue-200/50 blur-[80px]" />
         
         <div>
-          <div className="mb-6 inline-flex rounded-xl border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-[#1E3A8A]">
+          <div className="mb-6 inline-flex rounded-md border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-[#1E3A8A]">
             The USDT Card for Everyday Life
           </div>
 
@@ -93,10 +93,10 @@ export default function UcardLandingPage() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <button className="flex items-center gap-2 rounded-xl bg-[#1E3A8A] px-6 py-3.5 font-semibold text-white shadow-xl shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90">
+            <button className="flex items-center gap-2 rounded-md bg-[#1E3A8A] px-6 py-3.5 font-semibold text-white shadow-xl shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90">
               Get Your Ucard <ArrowRight size={18} />
             </button>
-            <button className="rounded-xl border border-slate-300 bg-white px-6 py-3.5 font-semibold text-slate-900 transition hover:bg-slate-50">
+            <button className="rounded-md border border-slate-300 bg-white px-6 py-3.5 font-semibold text-slate-900 transition hover:bg-slate-50">
               Learn More
             </button>
           </div>
@@ -417,14 +417,14 @@ export default function UcardLandingPage() {
           </div>
 
           <div className="mt-8 flex gap-3">
-            <button className="flex items-center gap-2 rounded-lg bg-slate-900 px-5 py-3 text-sm font-medium text-white">
+            <button className="flex items-center gap-2 rounded-md bg-slate-900 px-5 py-3 text-sm font-medium text-white">
               <Apple size={20} />
               <div className="text-left">
                 <p className="text-[8px] opacity-70">Download on the</p>
                 <p className="text-sm font-semibold">App Store</p>
               </div>
             </button>
-            <button className="flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-5 py-3 text-sm font-medium">
+            <button className="flex items-center gap-2 rounded-md border border-slate-300 bg-white px-5 py-3 text-sm font-medium">
               <Play size={20} className="fill-current" />
               <div className="text-left">
                 <p className="text-[8px] text-slate-500">GET IT ON</p>
@@ -451,7 +451,7 @@ export default function UcardLandingPage() {
             <p className="mt-4 max-w-md text-slate-600">
               Complete missions. Earn points. Invite friends. Unlock levels and exclusive rewards.
             </p>
-            <button className="mt-6 inline-flex w-fit items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-900 transition hover:bg-slate-50">
+            <button className="mt-6 inline-flex w-fit items-center gap-2 rounded-md border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-900 transition hover:bg-slate-50">
               Explore Rewards <ArrowRight size={16} />
             </button>
           </div>
@@ -616,7 +616,7 @@ export default function UcardLandingPage() {
               </p>
             </div>
           </div>
-          <button className="rounded-xl bg-[#1E3A8A] px-6 py-3 font-semibold text-white transition hover:bg-[#1E3A8A]/90">
+          <button className="rounded-md bg-[#1E3A8A] px-6 py-3 font-semibold text-white transition hover:bg-[#1E3A8A]/90">
             Become a Partner <ArrowRight className="ml-1 inline h-4 w-4" />
           </button>
         </div>
@@ -633,7 +633,7 @@ export default function UcardLandingPage() {
             Start Spending Your USDT Today
           </h2>
           <p className="relative mt-3 text-blue-200">Simple. Secure. Global.</p>
-          <button className="relative mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-7 py-3.5 font-bold text-[#1E3A8A] transition hover:bg-slate-100">
+          <button className="relative mt-6 inline-flex items-center gap-2 rounded-md bg-white px-7 py-3.5 font-bold text-[#1E3A8A] transition hover:bg-slate-100">
             Get Your Ucard <ArrowRight size={18} />
           </button>
         </div>
@@ -694,7 +694,7 @@ export default function UcardLandingPage() {
           <div>
             <h4 className="font-bold text-slate-900">Subscribe to our newsletter</h4>
             <p className="mt-2 text-sm text-slate-500">Get the latest updates and offers.</p>
-            <div className="mt-4 flex items-center rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5">
+            <div className="mt-4 flex items-center rounded-md border border-slate-200 bg-slate-50 px-4 py-2.5">
               <input
                 type="email"
                 placeholder="Enter your email"
