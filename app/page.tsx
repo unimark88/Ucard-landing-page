@@ -523,37 +523,39 @@ export default function UcardLandingPage() {
             </div>
           </div>
         </div>
+      </section>
 
-        {/* TRUST BAR - Floating below hero */}
-        <div className="mt-8 rounded-xl bg-[#EFF6FF] p-4 shadow-sm md:p-5 lg:ml-auto lg:max-w-3xl">
-          <div className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
-            <div className="shrink-0 text-center md:text-left">
-              <h3 className="text-sm font-bold leading-snug md:text-base">{t.trustTitle}</h3>
-              <p className="mt-0.5 text-xs leading-relaxed text-slate-500">
-                {t.trustDesc}
-              </p>
+      {/* TRUST BAR */}
+      <section className="mx-auto max-w-7xl px-6 pb-10">
+        <div className="rounded-2xl bg-[#EFF6FF] p-5 shadow-sm md:p-6">
+          <div className="mb-4 text-center md:mb-0 md:text-left">
+            <h3 className="text-lg font-bold leading-snug">{t.trustTitle}</h3>
+            <p className="mt-1 text-sm leading-relaxed text-slate-500">
+              {t.trustDesc}
+            </p>
+          </div>
+
+          <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-4">
+            <div className="flex flex-col items-center text-center">
+              <img src="/images/visa-logo.png" alt="VISA" className="h-8 w-auto object-contain md:h-10" />
+              <p className="mt-2 text-xs text-slate-400">{t.globalNetwork}</p>
             </div>
 
-            <div className="grid grid-cols-4 gap-3 md:gap-4">
-              <div className="flex flex-col items-center text-center">
-                <img src="/images/visa-logo.png" alt="VISA" className="h-6 w-auto object-contain md:h-8" />
-                <p className="mt-1 text-[10px] text-slate-400 md:text-xs">{t.globalNetwork}</p>
-              </div>
+            <div className="flex flex-col items-center text-center">
+              <img src="/images/mastercard-logo.png" alt="Mastercard" className="h-8 w-auto object-contain md:h-10" />
+              <p className="mt-2 text-xs text-slate-400">{t.licensedPartner}</p>
+            </div>
 
-              <div className="flex flex-col items-center text-center">
-                <img src="/images/mastercard-logo.png" alt="Mastercard" className="h-6 w-auto object-contain md:h-8" />
-                <p className="mt-1 text-[10px] text-slate-400 md:text-xs">{t.licensedPartner}</p>
-              </div>
+            <div className="flex flex-col items-center text-center">
+              <img src="/images/sumsub-logo.png" alt="Sumsub" className="h-6 w-auto object-contain md:h-8" />
+              <p className="mt-2 text-xs text-slate-400">KYC / AML</p>
+              <p className="text-[10px] text-slate-300">{t.verified}</p>
+            </div>
 
-              <div className="flex flex-col items-center text-center">
-                <img src="/images/sumsub-logo.png" alt="Sumsub" className="h-5 w-auto object-contain md:h-6" />
-                <p className="mt-1 text-[10px] text-slate-400 md:text-xs">KYC / AML</p>
-              </div>
-
-              <div className="flex flex-col items-center text-center">
-                <img src="/images/encryption-shield.png" alt="256-bit Encryption" className="h-7 w-auto object-contain md:h-9" />
-                <p className="mt-1 text-[10px] text-slate-400 md:text-xs">{t.encryption}</p>
-              </div>
+            <div className="flex flex-col items-center text-center">
+              <img src="/images/encryption-shield.png" alt="256-bit Encryption" className="h-9 w-auto object-contain md:h-11" />
+              <p className="mt-2 text-xs text-slate-400">{t.encryption}</p>
+              <p className="text-[10px] text-slate-300">{t.secureAndSafe}</p>
             </div>
           </div>
         </div>
