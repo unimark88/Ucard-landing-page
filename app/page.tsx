@@ -750,21 +750,19 @@ export default function UcardLandingPage() {
           </div>
         </div>
 
-        <div className="flex items-center justify-between gap-6 rounded-2xl bg-white p-8 shadow-sm">
-          <div className="flex-1">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
-              {t.globalAccess}
-            </p>
-            <h3 className="mt-2 text-2xl font-extrabold">{t.useUcardAnywhere}</h3>
-            <p className="mt-3 text-sm text-slate-600">
-              {t.globalDesc}
-            </p>
+        <div className="flex items-center gap-6 rounded-2xl bg-white p-6 shadow-sm">
+          <div className="w-1/2 shrink-0">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">{t.globalAccess}</p>
+            <h3 className="mt-1 text-xl font-extrabold">{t.useUcardAnywhere}</h3>
+            <p className="mt-2 text-sm text-slate-600">{t.globalDesc}</p>
           </div>
-          <img 
-            src="/images/world-map.jpg" 
-            alt="Global Access Map" 
-            className="w-32 shrink-0 rounded-lg lg:w-40"
-          />
+          <div className="w-1/2">
+            <img 
+              src="/images/world-map.jpg" 
+              alt="Global Access Map" 
+              className="w-full rounded-lg"
+            />
+          </div>
         </div>
       </section>
 
