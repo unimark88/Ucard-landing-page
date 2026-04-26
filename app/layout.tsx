@@ -79,8 +79,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.png',
-    shortcut: '/favicon.png',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
     apple: '/images/ucard-logo.png',
   },
   manifest: '/manifest.json',
