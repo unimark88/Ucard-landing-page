@@ -674,7 +674,7 @@ export default function UcardLandingPage() {
         <div className="pointer-events-none absolute -right-40 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-gradient-to-bl from-blue-400/30 to-blue-600/20 blur-[100px]" />
         
         <div className="relative flex flex-col gap-6 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 lg:flex-row lg:items-center lg:p-10">
-          <div className="flex flex-col justify-center lg:w-1/4">
+          <div className="flex flex-col justify-center lg:w-[30%]">
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
               {t.levelUpExperience}
             </p>
@@ -689,7 +689,7 @@ export default function UcardLandingPage() {
             </button>
           </div>
 
-          <div className="flex items-center justify-center lg:w-3/4">
+          <div className="flex items-center justify-center lg:w-[70%]">
             {/* Rewards card */}
             <img 
               src="/images/rewards-card.png" 
