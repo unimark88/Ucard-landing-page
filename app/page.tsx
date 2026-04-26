@@ -663,11 +663,11 @@ export default function UcardLandingPage() {
       </section>
 
       {/* REWARDS */}
-      <section className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-20">
+      <section className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-10">
         {/* Background glow */}
         <div className="pointer-events-none absolute -right-40 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-gradient-to-bl from-blue-400/30 to-blue-600/20 blur-[100px]" />
         
-        <div className="relative flex flex-col gap-4 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-5 md:flex-row md:items-center md:gap-5 md:p-6">
+        <div className="relative flex flex-col gap-4 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100/50 px-5 py-4 md:flex-row md:items-center md:gap-5 md:px-6 md:py-5">
           <div className="flex flex-col justify-center text-center md:w-[30%] md:text-left">
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
               {t.levelUpExperience}
