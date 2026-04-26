@@ -467,7 +467,7 @@ export default function UcardLandingPage() {
             {t.heroBadge}
           </div>
 
-          <h1 className="max-w-xl text-5xl font-extrabold leading-[1.1] tracking-tight md:text-6xl">
+          <h1 className="max-w-xl text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
             {t.heroTitle1}{" "}
             <span className="text-[#2563EB]">{t.heroTitle2}</span>
           </h1>
@@ -522,7 +522,7 @@ export default function UcardLandingPage() {
           <div className="absolute -left-20 bottom-20 h-[250px] w-[250px] rounded-full bg-gradient-to-tr from-blue-300/30 to-blue-500/20 blur-[60px]" />
 
           {/* Hero Image */}
-          <div className="relative z-10 w-full max-w-[420px] lg:max-w-[500px]">
+          <div className="relative z-10 w-full max-w-[320px] md:max-w-[420px] lg:max-w-[500px]">
             <img 
               src="/images/ucard-card.png" 
               alt="Ucard USDT Card" 
@@ -534,39 +534,33 @@ export default function UcardLandingPage() {
 
       {/* TRUST BAR */}
       <section className="mx-auto max-w-7xl px-6 pb-20">
-        <div className="grid gap-6 rounded-2xl bg-[#EFF6FF] p-8 shadow-sm md:grid-cols-5">
-          <div className="md:col-span-1">
+        <div className="rounded-2xl bg-[#EFF6FF] p-6 shadow-sm md:p-8">
+          <div className="mb-6 text-center md:mb-0 md:text-left">
             <h3 className="text-lg font-bold leading-snug">{t.trustTitle}</h3>
             <p className="mt-2 text-sm leading-relaxed text-slate-500">
               {t.trustDesc}
             </p>
           </div>
 
-          <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
-            <div className="text-center">
-              <img src="/images/visa-logo.png" alt="VISA" className="mx-auto h-10 w-auto object-contain" />
+          <div className="mt-6 grid grid-cols-2 gap-6 md:mt-6 md:grid-cols-4">
+            <div className="flex flex-col items-center text-center">
+              <img src="/images/visa-logo.png" alt="VISA" className="h-8 w-auto object-contain md:h-10" />
               <p className="mt-2 text-xs text-slate-400">{t.globalNetwork}</p>
             </div>
-          </div>
 
-          <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
-            <div className="text-center">
-              <img src="/images/mastercard-logo.png" alt="Mastercard" className="mx-auto h-10 w-auto object-contain" />
+            <div className="flex flex-col items-center text-center">
+              <img src="/images/mastercard-logo.png" alt="Mastercard" className="h-8 w-auto object-contain md:h-10" />
               <p className="mt-2 text-xs text-slate-400">{t.licensedPartner}</p>
             </div>
-          </div>
 
-          <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
-            <div className="text-center">
-              <img src="/images/sumsub-logo.png" alt="Sumsub" className="mx-auto h-8 w-auto object-contain" />
+            <div className="flex flex-col items-center text-center">
+              <img src="/images/sumsub-logo.png" alt="Sumsub" className="h-6 w-auto object-contain md:h-8" />
               <p className="mt-2 text-xs text-slate-400">KYC / AML</p>
               <p className="text-[10px] text-slate-300">{t.verified}</p>
             </div>
-          </div>
 
-          <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
-            <div className="text-center">
-              <img src="/images/encryption-shield.png" alt="256-bit Encryption" className="mx-auto h-11 w-auto object-contain" />
+            <div className="flex flex-col items-center text-center">
+              <img src="/images/encryption-shield.png" alt="256-bit Encryption" className="h-9 w-auto object-contain md:h-11" />
               <p className="mt-2 text-xs text-slate-400">{t.encryption}</p>
               <p className="text-[10px] text-slate-300">{t.secureAndSafe}</p>
             </div>
@@ -580,7 +574,7 @@ export default function UcardLandingPage() {
         <div className="pointer-events-none absolute -right-60 top-0 h-[300px] w-[300px] rounded-full bg-gradient-to-br from-blue-400/20 to-blue-600/10 blur-[80px]" />
         <div className="pointer-events-none absolute -left-40 bottom-0 h-[250px] w-[250px] rounded-full bg-gradient-to-tr from-blue-300/20 to-blue-500/10 blur-[70px]" />
         
-        <h2 className="relative text-center text-3xl font-extrabold tracking-tight">
+        <h2 className="relative text-center text-2xl font-extrabold tracking-tight md:text-3xl">
           {t.featuresTitle}
         </h2>
 
@@ -609,7 +603,7 @@ export default function UcardLandingPage() {
       </section>
 
       {/* APP EXPERIENCE */}
-      <section className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 overflow-hidden px-6 pb-20 lg:grid-cols-2">
+      <section className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 overflow-hidden px-6 pb-20 md:gap-12 lg:grid-cols-2">
         {/* Background glow */}
         <div className="pointer-events-none absolute -left-40 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-gradient-to-br from-blue-400/25 to-blue-600/15 blur-[100px]" />
         
@@ -621,15 +615,15 @@ export default function UcardLandingPage() {
           <img 
             src="/images/app-mockup.png" 
             alt="Ucard Mobile App" 
-            className="relative z-10 w-full max-w-[380px] lg:max-w-[440px]"
+            className="relative z-10 w-full max-w-[300px] md:max-w-[380px] lg:max-w-[440px]"
           />
         </div>
 
-        <div>
+        <div className="text-center lg:text-left">
           <p className="text-sm font-bold uppercase tracking-widest text-[#2563EB]">
             {t.simpleSecure}
           </p>
-          <h2 className="mt-3 text-4xl font-extrabold leading-tight">
+          <h2 className="mt-3 text-2xl font-extrabold leading-tight md:text-3xl lg:text-4xl">
             {t.designedForEveryday}
           </h2>
 
@@ -649,7 +643,7 @@ export default function UcardLandingPage() {
             ))}
           </div>
 
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex justify-center gap-4 lg:justify-start">
             <a href="#" className="cursor-pointer transition hover:opacity-80">
               <img 
                 src="/images/app-store-badge.png" 
@@ -673,18 +667,18 @@ export default function UcardLandingPage() {
         {/* Background glow */}
         <div className="pointer-events-none absolute -right-40 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-gradient-to-bl from-blue-400/30 to-blue-600/20 blur-[100px]" />
         
-        <div className="relative flex flex-col gap-6 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 lg:flex-row lg:items-center lg:p-10">
-          <div className="flex flex-col justify-center lg:w-[30%]">
+        <div className="relative flex flex-col gap-6 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-6 md:p-8 lg:flex-row lg:items-center lg:p-10">
+          <div className="flex flex-col justify-center text-center lg:w-[30%] lg:text-left">
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
               {t.levelUpExperience}
             </p>
-            <h2 className="mt-3 text-2xl font-extrabold leading-tight lg:text-3xl">
+            <h2 className="mt-3 text-xl font-extrabold leading-tight md:text-2xl lg:text-3xl">
               {t.moreThanCard}<br />{t.itsAJourney}
             </h2>
             <p className="mt-4 text-sm text-slate-600">
               {t.rewardsDesc}
             </p>
-            <button className="mt-6 inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-900 transition hover:bg-slate-50">
+            <button className="mx-auto mt-6 inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-900 transition hover:bg-slate-50 lg:mx-0">
               {t.exploreRewards} <ArrowRight size={16} />
             </button>
           </div>
@@ -704,13 +698,13 @@ export default function UcardLandingPage() {
       <section className="relative mx-auto grid max-w-7xl gap-6 overflow-hidden px-6 pb-10 md:grid-cols-2">
         {/* Background glow */}
         <div className="pointer-events-none absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-blue-400/15 to-blue-600/10 blur-[80px]" />
-        <div className="rounded-2xl bg-white p-8 shadow-sm">
+        <div className="rounded-2xl bg-white p-6 shadow-sm md:p-8">
           <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
             {t.builtForTrust}
           </p>
-          <h3 className="mt-2 text-2xl font-extrabold">{t.securityTitle}</h3>
-          <div className="mt-6 flex items-start justify-between gap-6">
-            <div className="space-y-3">
+          <h3 className="mt-2 text-xl font-extrabold md:text-2xl">{t.securityTitle}</h3>
+          <div className="mt-6 flex flex-col items-center gap-6 md:flex-row md:items-start md:justify-between">
+            <div className="order-2 space-y-3 md:order-1">
               {[
                 t.securityItem1,
                 t.securityItem2,
@@ -729,15 +723,15 @@ export default function UcardLandingPage() {
             <img 
               src="/images/security-shield.png" 
               alt="Security Shield" 
-              className="w-28 shrink-0 lg:w-36"
+              className="order-1 w-24 shrink-0 md:order-2 md:w-28 lg:w-36"
             />
           </div>
         </div>
 
         <div className="flex flex-col gap-4 rounded-2xl bg-white p-6 shadow-sm md:flex-row md:items-center md:gap-6">
-          <div className="md:w-2/5">
+          <div className="text-center md:w-2/5 md:text-left">
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">{t.globalAccess}</p>
-            <h3 className="mt-1 text-xl font-extrabold">{t.useUcardAnywhere}</h3>
+            <h3 className="mt-1 text-lg font-extrabold md:text-xl">{t.useUcardAnywhere}</h3>
             <p className="mt-2 text-sm text-slate-600">{t.globalDesc}</p>
           </div>
           <div className="md:w-3/5">
@@ -772,12 +766,12 @@ export default function UcardLandingPage() {
 
       {/* FINAL CTA - with glow effects */}
       <section className="mx-auto max-w-7xl px-6 pb-16">
-        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#1E3A8A] to-[#2563EB] px-8 py-12 text-center text-white">
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#1E3A8A] to-[#2563EB] px-6 py-10 text-center text-white md:px-8 md:py-12">
           {/* Glow orbs */}
           <div className="pointer-events-none absolute -left-20 -top-20 h-[200px] w-[200px] rounded-full bg-blue-400/30 blur-[60px]" />
           <div className="pointer-events-none absolute -bottom-20 -right-20 h-[250px] w-[250px] rounded-full bg-blue-300/25 blur-[80px]" />
           <div className="pointer-events-none absolute left-1/2 top-0 h-[150px] w-[150px] -translate-x-1/2 rounded-full bg-white/10 blur-[50px]" />
-          <h2 className="relative text-3xl font-extrabold md:text-4xl">
+          <h2 className="relative text-2xl font-extrabold md:text-3xl lg:text-4xl">
             {t.ctaTitle}
           </h2>
           <p className="relative mt-3 text-blue-200">{t.ctaSubtitle}</p>
@@ -789,7 +783,7 @@ export default function UcardLandingPage() {
 
       {/* FOOTER */}
       <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-12 lg:grid-cols-7">
+        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-10 md:py-12 sm:grid-cols-2 lg:grid-cols-7">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#1E3A8A] to-[#3B82F6]">
