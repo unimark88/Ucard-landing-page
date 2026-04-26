@@ -529,7 +529,7 @@ export default function UcardLandingPage() {
       <section className="mx-auto max-w-7xl px-6 pb-10">
         <div className="flex flex-col gap-6 rounded-2xl bg-[#EFF6FF] p-5 shadow-sm md:flex-row md:items-center md:gap-8 md:p-6">
           <div className="text-center md:w-[20%] md:text-left">
-            <h3 className="text-sm font-bold leading-snug">{t.trustTitle}</h3>
+            <h3 className="text-base font-bold leading-snug">{t.trustTitle}</h3>
             <p className="mt-1 text-xs leading-relaxed text-slate-500">
               {t.trustDesc}
             </p>
@@ -537,24 +537,32 @@ export default function UcardLandingPage() {
 
           <div className="grid grid-cols-2 gap-4 md:w-[80%] md:grid-cols-4">
             <div className="flex flex-col items-center text-center">
-              <img src="/images/visa-logo.png" alt="VISA" className="h-8 w-auto object-contain md:h-10" />
-              <p className="mt-2 text-sm text-slate-500">{t.globalNetwork}</p>
+              <div className="flex h-10 items-center md:h-12">
+                <img src="/images/visa-logo.png" alt="VISA" className="h-8 w-auto object-contain md:h-10" />
+              </div>
+              <p className="text-sm text-slate-500">{t.globalNetwork}</p>
             </div>
 
             <div className="flex flex-col items-center text-center">
-              <img src="/images/mastercard-logo.png" alt="Mastercard" className="h-8 w-auto object-contain md:h-10" />
-              <p className="mt-2 text-sm text-slate-500">{t.licensedPartner}</p>
+              <div className="flex h-10 items-center md:h-12">
+                <img src="/images/mastercard-logo.png" alt="Mastercard" className="h-8 w-auto object-contain md:h-10" />
+              </div>
+              <p className="text-sm text-slate-500">{t.licensedPartner}</p>
             </div>
 
             <div className="flex flex-col items-center text-center">
-              <img src="/images/sumsub-logo.png" alt="Sumsub" className="h-6 w-auto object-contain md:h-8" />
-              <p className="mt-2 text-sm text-slate-500">KYC / AML</p>
+              <div className="flex h-10 items-center md:h-12">
+                <img src="/images/sumsub-logo.png" alt="Sumsub" className="h-6 w-auto object-contain md:h-8" />
+              </div>
+              <p className="text-sm text-slate-500">KYC / AML</p>
               <p className="text-xs text-slate-400">{t.verified}</p>
             </div>
 
             <div className="flex flex-col items-center text-center">
-              <img src="/images/encryption-shield.png" alt="256-bit Encryption" className="h-9 w-auto object-contain md:h-11" />
-              <p className="mt-2 text-sm text-slate-500">{t.encryption}</p>
+              <div className="flex h-10 items-center md:h-12">
+                <img src="/images/encryption-shield.png" alt="256-bit Encryption" className="h-9 w-auto object-contain md:h-11" />
+              </div>
+              <p className="text-sm text-slate-500">{t.encryption}</p>
               <p className="text-xs text-slate-400">{t.secureAndSafe}</p>
             </div>
           </div>
