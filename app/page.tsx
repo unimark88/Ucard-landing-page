@@ -11,17 +11,10 @@ import {
   CheckCircle,
   Users,
   CreditCard,
-  Wallet,
   Send,
-  RefreshCw,
-  MoreHorizontal,
   ChevronDown,
   Apple,
   Play,
-  Coffee,
-  ShoppingBag,
-  ArrowUpRight,
-  Car,
   Flame,
   UserPlus,
   X,
@@ -534,109 +527,22 @@ export default function UcardLandingPage() {
           <div className="absolute -right-10 top-10 h-[350px] w-[350px] rounded-full bg-gradient-to-br from-blue-400/40 to-blue-600/30 blur-[80px]" />
           <div className="absolute -left-20 bottom-20 h-[250px] w-[250px] rounded-full bg-gradient-to-tr from-blue-300/30 to-blue-500/20 blur-[60px]" />
 
-          {/* Card */}
-          <div className="absolute -left-4 top-32 z-20 h-52 w-80 rotate-[-12deg] rounded-2xl bg-gradient-to-br from-[#0a1628] to-[#1E3A8A] p-6 text-white shadow-2xl lg:left-0">
-            <div className="flex items-center gap-2">
-              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-white/20">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="h-4 w-4"
-                  stroke="white"
-                  strokeWidth="2"
-                >
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-              </div>
-              <span className="text-lg font-bold">Ucard</span>
-            </div>
-            <div className="mt-12 flex items-center gap-2">
-              <div className="h-8 w-10 rounded bg-gradient-to-br from-yellow-300 to-yellow-500" />
-            </div>
-            <div className="absolute bottom-5 right-6 text-2xl font-black italic tracking-tight">
-              VISA
-            </div>
+          {/* Card Image */}
+          <div className="absolute -left-4 top-24 z-20 w-72 rotate-[-12deg] lg:left-0 lg:w-80">
+            <img 
+              src="/images/ucard-card.jpg" 
+              alt="Ucard USDT Card" 
+              className="w-full rounded-2xl shadow-2xl"
+            />
           </div>
 
-          {/* Phone */}
-          <div className="relative z-10 w-72 rounded-[2.5rem] border-[8px] border-slate-900 bg-white shadow-2xl">
-            <div className="absolute left-1/2 top-3 h-6 w-24 -translate-x-1/2 rounded-full bg-slate-900" />
-            <div className="p-5 pt-10">
-              <div className="mb-4 flex items-center justify-between">
-                <span className="text-sm font-bold text-slate-900">{t.hello} 👋</span>
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-100">
-                  <span className="text-sm">🔔</span>
-                </div>
-              </div>
-
-              <div className="rounded-2xl bg-slate-50 p-4">
-                <p className="text-xs text-slate-500">{t.totalBalance}</p>
-                <h3 className="mt-1 text-2xl font-extrabold text-slate-900">
-                  12,856.00 <span className="text-base font-bold text-slate-500">USDT</span>
-                </h3>
-                <p className="text-xs text-green-500">+ $12,856.00</p>
-              </div>
-
-              <div className="mt-4 grid grid-cols-4 gap-2 text-center">
-                {[
-                  { icon: Wallet, label: t.topUp },
-                  { icon: Send, label: t.send },
-                  { icon: RefreshCw, label: t.swap },
-                  { icon: MoreHorizontal, label: t.more },
-                ].map((item) => (
-                  <div key={item.label}>
-                    <div className="mx-auto mb-1.5 flex h-10 w-10 items-center justify-center rounded-full bg-blue-50 text-[#2563EB]">
-                      <item.icon size={18} />
-                    </div>
-                    <span className="text-[10px] text-slate-600">{item.label}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-4">
-                <div className="mb-2 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-slate-900">{t.recentTransactions}</span>
-                  <span className="cursor-pointer text-[10px] text-[#2563EB] transition hover:underline">{t.viewAll}</span>
-                </div>
-                <div className="space-y-2.5">
-                  {[
-                    { icon: Coffee, name: "Starbucks", time: "Today, 10:20", amount: "-12.80 USDT", color: "text-slate-600" },
-                    { icon: ShoppingBag, name: "Amazon", time: "Today, 09:12", amount: "-45.90 USDT", color: "text-slate-600" },
-                    { icon: ArrowUpRight, name: "Top Up", time: "Yesterday, 21:41", amount: "+200.00 USDT", color: "text-green-600" },
-                    { icon: Car, name: "Uber", time: "Yesterday, 18:30", amount: "-8.50 USDT", color: "text-slate-600" },
-                  ].map((tx) => (
-                    <div key={tx.name} className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-50 text-[#2563EB]">
-                          <tx.icon size={14} />
-                        </div>
-                        <div>
-                          <p className="text-xs font-semibold text-slate-900">{tx.name}</p>
-                          <p className="text-[9px] text-slate-400">{tx.time}</p>
-                        </div>
-                      </div>
-                      <span className={`text-xs font-semibold ${tx.color}`}>{tx.amount}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="mt-4 grid grid-cols-4 gap-1 border-t border-slate-100 pt-3">
-                {[
-                  { icon: "🏠", label: t.home, active: true },
-                  { icon: "💳", label: t.card },
-                  { icon: "🎁", label: t.nav.rewards },
-                  { icon: "👤", label: t.profile },
-                ].map((item) => (
-                  <div key={item.label} className={`text-center ${item.active ? "text-[#2563EB]" : "text-slate-400"}`}>
-                    <span className="text-base">{item.icon}</span>
-                    <p className="text-[8px]">{item.label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+          {/* Phone Image */}
+          <div className="relative z-10 w-64 lg:w-72">
+            <img 
+              src="/images/ucard-phone.jpg" 
+              alt="Ucard Mobile App" 
+              className="w-full rounded-[2rem] shadow-2xl"
+            />
           </div>
         </div>
       </section>
