@@ -85,7 +85,7 @@ const translations = {
     limitSettings: "Limit Settings",
     // Rewards
     levelUpExperience: "Level up your experience",
-    moreThanCard: "More Than a Card —",
+    moreThanCard: "More Than a Card",
     itsAJourney: "It's a Journey",
     rewardsDesc: "Complete missions. Earn points. Invite friends. Unlock levels and exclusive rewards.",
     exploreRewards: "Explore Rewards",
@@ -197,7 +197,7 @@ const translations = {
     limitSettings: "限额设置",
     // Rewards
     levelUpExperience: "升级您的体验",
-    moreThanCard: "不仅仅是一张卡 —",
+    moreThanCard: "不仅仅是一张卡",
     itsAJourney: "这是一段旅程",
     rewardsDesc: "完成任务。赚取积分。邀请朋友。解锁等级和专属奖励。",
     exploreRewards: "探索奖励",
@@ -309,7 +309,7 @@ const translations = {
     limitSettings: "Pengaturan Limit",
     // Rewards
     levelUpExperience: "Tingkatkan pengalaman Anda",
-    moreThanCard: "Lebih dari Sekadar Kartu —",
+    moreThanCard: "Lebih dari Sekadar Kartu",
     itsAJourney: "Ini adalah Perjalanan",
     rewardsDesc: "Selesaikan misi. Dapatkan poin. Undang teman. Buka level dan hadiah eksklusif.",
     exploreRewards: "Jelajahi Hadiah",
@@ -673,7 +673,7 @@ export default function UcardLandingPage() {
         {/* Background glow */}
         <div className="pointer-events-none absolute -right-40 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-gradient-to-bl from-blue-400/30 to-blue-600/20 blur-[100px]" />
         
-        <div className="relative flex flex-col gap-6 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 lg:flex-row lg:items-center lg:p-10">
+        <div className="relative flex flex-col gap-8 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-10 lg:flex-row lg:items-center lg:gap-12 lg:p-14">
           <div className="flex flex-col justify-center lg:w-[30%]">
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
               {t.levelUpExperience}
