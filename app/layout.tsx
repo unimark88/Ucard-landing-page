@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     description: 'A seamless USDT card designed for real-world payments. Earn yield, stay on-chain, and spend globally.',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/images/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Ucard - The USDT Card for Everyday Life',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Ucard - Spend Your USDT Like Cash',
     description: 'A seamless USDT card designed for real-world payments. Earn yield, stay on-chain, and spend globally.',
-    images: ['/images/og-image.jpg'],
+    images: ['/images/og-image.png'],
     creator: '@ucard',
   },
   robots: {
