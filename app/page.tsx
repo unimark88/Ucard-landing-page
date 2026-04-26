@@ -387,19 +387,7 @@ export default function UcardLandingPage() {
       {/* NAV */}
       <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
         <div className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#1E3A8A] to-[#3B82F6]">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              className="h-5 w-5"
-              stroke="white"
-              strokeWidth="2.5"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5z" />
-              <path d="M2 17l10 5 10-5" />
-              <path d="M2 12l10 5 10-5" />
-            </svg>
-          </div>
+          <img src="/images/ucard-logo.png" alt="Ucard" className="h-8 w-auto" />
           <span className="text-xl font-bold tracking-tight">Ucard</span>
         </div>
 
@@ -767,19 +755,7 @@ export default function UcardLandingPage() {
         <div className="mx-auto grid max-w-7xl gap-6 px-6 py-8 md:py-10 sm:grid-cols-2 lg:grid-cols-7">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#1E3A8A] to-[#3B82F6]">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="h-4 w-4"
-                  stroke="white"
-                  strokeWidth="2"
-                >
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-              </div>
+              <img src="/images/ucard-logo.png" alt="Ucard" className="h-7 w-auto" />
               <span className="text-lg font-bold">Ucard</span>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-slate-500">
