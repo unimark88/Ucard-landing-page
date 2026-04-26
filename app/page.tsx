@@ -13,8 +13,6 @@ import {
   CreditCard,
   Send,
   ChevronDown,
-  Flame,
-  UserPlus,
   X,
   Star,
   Check,
@@ -704,64 +702,19 @@ export default function UcardLandingPage() {
 
           <div className="flex items-center justify-center">
             <div className="relative py-8 lg:py-0">
-              {/* Gift boxes decoration */}
-              <div className="absolute -right-4 -top-4 z-10 flex h-14 w-14 rotate-6 items-center justify-center rounded-xl bg-gradient-to-br from-[#2563EB] to-[#60A5FA] shadow-xl lg:-right-12 lg:-top-6 lg:h-16 lg:w-16">
-                <Gift className="h-7 w-7 text-white lg:h-8 lg:w-8" />
-              </div>
-              <div className="absolute -bottom-2 -right-2 z-10 flex h-10 w-10 -rotate-12 items-center justify-center rounded-lg bg-gradient-to-br from-yellow-400 to-orange-400 shadow-xl lg:-bottom-4 lg:-right-6 lg:h-12 lg:w-12">
-                <Star className="h-5 w-5 text-white lg:h-6 lg:w-6" />
-              </div>
-              <div className="absolute -left-4 top-1/2 z-10 flex h-10 w-10 rotate-12 -translate-y-1/2 items-center justify-center rounded-lg bg-gradient-to-br from-[#2563EB] to-[#93C5FD] shadow-xl lg:-left-10 lg:h-12 lg:w-12">
-                <Gift className="h-5 w-5 text-white lg:h-6 lg:w-6" />
-              </div>
-
-              <div className="w-80 rounded-2xl border border-slate-200 bg-white p-5 shadow-xl">
-                <div className="mb-4 flex items-start justify-between">
-                  <div className="rounded-lg border border-blue-100 bg-blue-50 p-3">
-                    <div className="flex items-center gap-2">
-                      <Gift className="h-5 w-5 text-[#2563EB]" />
-                      <div>
-                        <h3 className="text-sm font-bold">{t.level} 12</h3>
-                        <p className="text-xs text-slate-500">{t.ucardPro}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-sm font-semibold">2,450 / 3,000 XP</p>
-                  </div>
-                </div>
-
-                <div className="h-2 rounded-full bg-slate-100">
-                  <div className="h-2 w-4/5 rounded-full bg-gradient-to-r from-[#2563EB] to-[#60A5FA]" />
-                </div>
-
-                <div className="mt-5 space-y-3">
-                  {[
-                    { icon: Flame, label: t.dailyCheckIn, xp: "+20 XP", done: true },
-                    { icon: CreditCard, label: t.payWithUcard, xp: "+50 XP", done: true },
-                    { icon: UserPlus, label: t.inviteFriend, xp: "+100 XP", done: false },
-                  ].map((item) => (
-                    <div key={item.label} className="flex items-center justify-between rounded-lg bg-slate-50 p-3">
-                      <div className="flex items-center gap-3">
-                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-[#2563EB]">
-                          <item.icon size={16} />
-                        </div>
-                        <span className="text-sm font-medium">{item.label}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-sm font-semibold text-[#2563EB]">{item.xp}</span>
-                        {item.done ? (
-                          <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#2563EB]">
-                            <CheckCircle className="h-3 w-3 text-white" />
-                          </div>
-                        ) : (
-                          <div className="h-5 w-5 rounded-full border-2 border-slate-300" />
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              {/* Gift box decoration */}
+              <img 
+                src="/images/gift-box.jpg" 
+                alt="Rewards" 
+                className="absolute -right-8 -top-8 z-10 w-24 rotate-6 lg:-right-16 lg:-top-12 lg:w-32"
+              />
+              
+              {/* Rewards card */}
+              <img 
+                src="/images/rewards-card.jpg" 
+                alt="Level 12 Ucard Pro Rewards Card" 
+                className="relative z-0 w-80 rounded-2xl shadow-xl"
+              />
             </div>
           </div>
         </div>
