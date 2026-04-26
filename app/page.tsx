@@ -667,27 +667,27 @@ export default function UcardLandingPage() {
         {/* Background glow */}
         <div className="pointer-events-none absolute -right-40 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-gradient-to-bl from-blue-400/30 to-blue-600/20 blur-[100px]" />
         
-        <div className="relative flex flex-col gap-4 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-5 md:p-6 lg:flex-row lg:items-center lg:gap-6 lg:p-8">
-          <div className="flex flex-col justify-center text-center lg:w-[30%] lg:text-left">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
+        <div className="relative flex flex-col gap-3 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-4 md:flex-row md:items-center md:gap-4 md:p-5 lg:p-6">
+          <div className="flex flex-col justify-center text-center md:w-[28%] md:text-left">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-[#2563EB]">
               {t.levelUpExperience}
             </p>
-            <h2 className="mt-2 text-xl font-extrabold leading-tight md:text-2xl">
+            <h2 className="mt-1 text-lg font-extrabold leading-tight md:text-xl">
               {t.moreThanCard}<br />{t.itsAJourney}
             </h2>
-            <p className="mt-3 text-sm text-slate-600">
+            <p className="mt-2 text-xs text-slate-600">
               {t.rewardsDesc}
             </p>
-            <button className="mx-auto mt-4 inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 lg:mx-0">
-              {t.exploreRewards} <ArrowRight size={14} />
+            <button className="mx-auto mt-3 inline-flex w-fit cursor-pointer items-center gap-1.5 rounded-md border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-900 transition hover:bg-slate-50 md:mx-0">
+              {t.exploreRewards} <ArrowRight size={12} />
             </button>
           </div>
 
-          <div className="flex items-center justify-center lg:w-[70%]">
+          <div className="flex items-center justify-center md:w-[72%]">
             <img 
               src="/images/rewards-card.png" 
               alt="Level 12 Ucard Pro Rewards Card" 
-              className="w-full max-w-[500px] lg:max-w-none"
+              className="w-full max-w-[400px] md:max-w-none"
             />
           </div>
         </div>
