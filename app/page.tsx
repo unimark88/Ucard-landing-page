@@ -85,7 +85,7 @@ const translations = {
     limitSettings: "Limit Settings",
     // Rewards
     levelUpExperience: "Level up your experience",
-    moreThanCard: "More Than a Card —",
+    moreThanCard: "More Than a Card",
     itsAJourney: "It's a Journey",
     rewardsDesc: "Complete missions. Earn points. Invite friends. Unlock levels and exclusive rewards.",
     exploreRewards: "Explore Rewards",
@@ -197,7 +197,7 @@ const translations = {
     limitSettings: "限额设置",
     // Rewards
     levelUpExperience: "升级您的体验",
-    moreThanCard: "不仅仅是一张卡 —",
+    moreThanCard: "不仅仅是一张卡",
     itsAJourney: "这是一段旅程",
     rewardsDesc: "完成任务。赚取积分。邀请朋友。解锁等级和专属奖励。",
     exploreRewards: "探索奖励",
@@ -309,7 +309,7 @@ const translations = {
     limitSettings: "Pengaturan Limit",
     // Rewards
     levelUpExperience: "Tingkatkan pengalaman Anda",
-    moreThanCard: "Lebih dari Sekadar Kartu —",
+    moreThanCard: "Lebih dari Sekadar Kartu",
     itsAJourney: "Ini adalah Perjalanan",
     rewardsDesc: "Selesaikan misi. Dapatkan poin. Undang teman. Buka level dan hadiah eksklusif.",
     exploreRewards: "Jelajahi Hadiah",
@@ -521,21 +521,12 @@ export default function UcardLandingPage() {
           <div className="absolute -right-10 top-10 h-[350px] w-[350px] rounded-full bg-gradient-to-br from-blue-400/40 to-blue-600/30 blur-[80px]" />
           <div className="absolute -left-20 bottom-20 h-[250px] w-[250px] rounded-full bg-gradient-to-tr from-blue-300/30 to-blue-500/20 blur-[60px]" />
 
-          {/* Card Image */}
-          <div className="absolute -left-4 top-24 z-20 w-72 rotate-[-12deg] lg:left-0 lg:w-80">
+          {/* Hero Image */}
+          <div className="relative z-10 w-full max-w-[420px] lg:max-w-[500px]">
             <img 
               src="/images/ucard-card.png" 
               alt="Ucard USDT Card" 
-              className="w-full rounded-2xl shadow-2xl"
-            />
-          </div>
-
-          {/* Phone Image */}
-          <div className="relative z-10 w-64 lg:w-72">
-            <img 
-              src="/images/ucard-phone.png" 
-              alt="Ucard Mobile App" 
-              className="w-full rounded-[2rem] shadow-2xl"
+              className="w-full"
             />
           </div>
         </div>
@@ -630,7 +621,7 @@ export default function UcardLandingPage() {
           <img 
             src="/images/app-mockup.png" 
             alt="Ucard Mobile App" 
-            className="relative z-10 w-full max-w-md rounded-2xl shadow-2xl"
+            className="relative z-10 w-full max-w-[380px] lg:max-w-[440px]"
           />
         </div>
 
@@ -682,15 +673,15 @@ export default function UcardLandingPage() {
         {/* Background glow */}
         <div className="pointer-events-none absolute -right-40 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-gradient-to-bl from-blue-400/30 to-blue-600/20 blur-[100px]" />
         
-        <div className="relative grid gap-8 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 lg:grid-cols-2 lg:p-10">
-          <div className="flex flex-col justify-center">
+        <div className="relative flex flex-col gap-6 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 lg:flex-row lg:items-center lg:p-10">
+          <div className="flex flex-col justify-center lg:w-[30%]">
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
               {t.levelUpExperience}
             </p>
-            <h2 className="mt-3 text-3xl font-extrabold leading-tight lg:text-4xl">
+            <h2 className="mt-3 text-2xl font-extrabold leading-tight lg:text-3xl">
               {t.moreThanCard}<br />{t.itsAJourney}
             </h2>
-            <p className="mt-4 max-w-md text-slate-600">
+            <p className="mt-4 text-sm text-slate-600">
               {t.rewardsDesc}
             </p>
             <button className="mt-6 inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-900 transition hover:bg-slate-50">
@@ -698,12 +689,12 @@ export default function UcardLandingPage() {
             </button>
           </div>
 
-          <div className="flex items-center justify-center py-8 lg:py-0">
+          <div className="flex items-center justify-center lg:w-[70%]">
             {/* Rewards card */}
             <img 
               src="/images/rewards-card.png" 
               alt="Level 12 Ucard Pro Rewards Card" 
-              className="w-72 rounded-2xl shadow-xl lg:w-80"
+              className="w-full"
             />
           </div>
         </div>
@@ -738,22 +729,22 @@ export default function UcardLandingPage() {
             <img 
               src="/images/security-shield.png" 
               alt="Security Shield" 
-              className="w-24 shrink-0 lg:w-28"
+              className="w-28 shrink-0 lg:w-36"
             />
           </div>
         </div>
 
-        <div className="flex items-center gap-6 rounded-2xl bg-white p-6 shadow-sm">
-          <div className="w-1/2 shrink-0">
+        <div className="flex flex-col gap-4 rounded-2xl bg-white p-6 shadow-sm md:flex-row md:items-center md:gap-6">
+          <div className="md:w-2/5">
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">{t.globalAccess}</p>
             <h3 className="mt-1 text-xl font-extrabold">{t.useUcardAnywhere}</h3>
             <p className="mt-2 text-sm text-slate-600">{t.globalDesc}</p>
           </div>
-          <div className="w-1/2">
+          <div className="md:w-3/5">
             <img 
               src="/images/world-map.png" 
               alt="Global Access Map" 
-              className="w-full rounded-lg"
+              className="w-full"
             />
           </div>
         </div>
