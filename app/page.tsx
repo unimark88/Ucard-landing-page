@@ -513,8 +513,8 @@ export default function UcardLandingPage() {
           </div>
 
           {/* HERO MOCKUP */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-[480px] md:max-w-[650px] lg:max-w-none">
+          <div className="flex justify-center lg:justify-end lg:-mr-10 lg:overflow-visible">
+            <div className="w-full max-w-none md:scale-110 lg:scale-125 lg:origin-right">
               <img 
                 src="/images/ucard-card.png" 
                 alt="Ucard USDT Card" 
