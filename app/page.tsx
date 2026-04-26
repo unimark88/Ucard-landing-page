@@ -527,15 +527,15 @@ export default function UcardLandingPage() {
 
       {/* TRUST BAR */}
       <section className="mx-auto max-w-7xl px-6 pb-10">
-        <div className="rounded-2xl bg-[#EFF6FF] p-5 shadow-sm md:p-6">
-          <div className="mb-4 text-center md:mb-0 md:text-left">
+        <div className="flex flex-col gap-6 rounded-2xl bg-[#EFF6FF] p-5 shadow-sm md:flex-row md:items-center md:gap-8 md:p-6">
+          <div className="shrink-0 text-center md:text-left">
             <h3 className="text-lg font-bold leading-snug">{t.trustTitle}</h3>
             <p className="mt-1 text-sm leading-relaxed text-slate-500">
               {t.trustDesc}
             </p>
           </div>
 
-          <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-4">
+          <div className="grid flex-1 grid-cols-2 gap-4 md:grid-cols-4">
             <div className="flex flex-col items-center text-center">
               <img src="/images/visa-logo.png" alt="VISA" className="h-8 w-auto object-contain md:h-10" />
               <p className="mt-2 text-xs text-slate-400">{t.globalNetwork}</p>
