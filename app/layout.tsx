@@ -7,26 +7,78 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
-  icons: {
-    icon: [
+  title: {
+    default: 'Ucard - Spend Your USDT Like Cash',
+    template: '%s | Ucard',
+  },
+  description: 'A seamless USDT card designed for real-world payments. Earn yield, stay on-chain, and spend globally with Ucard. Licensed partners, KYC/AML compliant, and 256-bit encryption for secure transactions.',
+  keywords: [
+    'USDT card',
+    'crypto debit card',
+    'USDT payments',
+    'cryptocurrency card',
+    'spend crypto',
+    'USDT to fiat',
+    'crypto spending card',
+    'stablecoin card',
+    'digital payments',
+    'DeFi yield',
+    'on-chain transparency',
+    'crypto rewards',
+  ],
+  authors: [{ name: 'Ucard' }],
+  creator: 'Ucard',
+  publisher: 'Ucard',
+  metadataBase: new URL('https://ucard.app'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en': '/en',
+      'zh': '/zh',
+      'id': '/id',
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://ucard.app',
+    siteName: 'Ucard',
+    title: 'Ucard - Spend Your USDT Like Cash',
+    description: 'A seamless USDT card designed for real-world payments. Earn yield, stay on-chain, and spend globally.',
+    images: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Ucard - The USDT Card for Everyday Life',
       },
     ],
-    apple: '/apple-icon.png',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ucard - Spend Your USDT Like Cash',
+    description: 'A seamless USDT card designed for real-world payments. Earn yield, stay on-chain, and spend globally.',
+    images: ['/images/og-image.jpg'],
+    creator: '@ucard',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/images/ucard-logo.png',
+  },
+  manifest: '/manifest.json',
+  category: 'finance',
 }
 
 export default function RootLayout({
