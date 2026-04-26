@@ -694,7 +694,7 @@ export default function UcardLandingPage() {
             <img 
               src="/images/rewards-card.png" 
               alt="Level 12 Ucard Pro Rewards Card" 
-              className="w-full max-w-[500px] lg:max-w-[640px]"
+              className="w-full"
             />
           </div>
         </div>
