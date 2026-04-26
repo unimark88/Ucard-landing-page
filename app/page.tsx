@@ -3,11 +3,9 @@
 import { useState, useRef, useEffect } from "react"
 import {
   ArrowRight,
-  ShieldCheck,
   Globe2,
   Gift,
   TrendingUp,
-  Lock,
   CheckCircle,
   Users,
   CreditCard,
@@ -743,19 +741,12 @@ export default function UcardLandingPage() {
                 </div>
               ))}
             </div>
-            {/* 3D Shield */}
-            <div className="relative shrink-0">
-              <div className="h-28 w-28 rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 p-4">
-                <div className="flex h-full w-full items-center justify-center rounded-xl bg-gradient-to-br from-slate-200 to-slate-300 shadow-inner">
-                  <div className="relative">
-                    <ShieldCheck className="h-10 w-10 text-slate-400" />
-                    <div className="absolute -bottom-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-[#2563EB]">
-                      <Lock className="h-2.5 w-2.5 text-white" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/* Security Shield Image */}
+            <img 
+              src="/images/security-shield.jpg" 
+              alt="Security Shield" 
+              className="w-24 shrink-0 lg:w-28"
+            />
           </div>
         </div>
 
@@ -767,34 +758,12 @@ export default function UcardLandingPage() {
           <p className="mt-3 text-sm text-slate-600">
             {t.globalDesc}
           </p>
-          <div className="mt-6 flex h-32 items-center justify-center">
-            <div className="relative w-full max-w-[220px]">
-              {/* World map outline */}
-              <svg viewBox="0 0 200 100" className="w-full text-slate-200">
-                <ellipse cx="100" cy="50" rx="95" ry="45" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="3,3" />
-                <ellipse cx="100" cy="50" rx="70" ry="33" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="3,3" />
-                <ellipse cx="100" cy="50" rx="45" ry="21" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="3,3" />
-              </svg>
-              {/* Location pins with pulse effect */}
-              <div className="absolute left-[15%] top-[25%]">
-                <div className="h-2.5 w-2.5 rounded-full bg-[#2563EB] shadow-lg shadow-blue-500/50" />
-              </div>
-              <div className="absolute left-[42%] top-[20%]">
-                <div className="h-2.5 w-2.5 rounded-full bg-[#2563EB] shadow-lg shadow-blue-500/50" />
-              </div>
-              <div className="absolute left-[72%] top-[30%]">
-                <div className="h-2.5 w-2.5 rounded-full bg-[#2563EB] shadow-lg shadow-blue-500/50" />
-              </div>
-              <div className="absolute left-[28%] top-[55%]">
-                <div className="h-2.5 w-2.5 rounded-full bg-[#2563EB] shadow-lg shadow-blue-500/50" />
-              </div>
-              <div className="absolute left-[82%] top-[50%]">
-                <div className="h-2.5 w-2.5 rounded-full bg-[#2563EB] shadow-lg shadow-blue-500/50" />
-              </div>
-              <div className="absolute left-[55%] top-[60%]">
-                <div className="h-2.5 w-2.5 rounded-full bg-[#2563EB] shadow-lg shadow-blue-500/50" />
-              </div>
-            </div>
+          <div className="mt-6 flex items-center justify-center">
+            <img 
+              src="/images/world-map.jpg" 
+              alt="Global Access Map" 
+              className="w-full max-w-[280px] rounded-lg"
+            />
           </div>
         </div>
       </section>
