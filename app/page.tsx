@@ -522,7 +522,7 @@ export default function UcardLandingPage() {
           <div className="absolute -left-20 bottom-20 h-[250px] w-[250px] rounded-full bg-gradient-to-tr from-blue-300/30 to-blue-500/20 blur-[60px]" />
 
           {/* Hero Image */}
-          <div className="relative z-10 w-80 lg:w-96">
+          <div className="relative z-10 w-full max-w-[420px] lg:max-w-[500px]">
             <img 
               src="/images/ucard-card.png" 
               alt="Ucard USDT Card" 
@@ -621,7 +621,7 @@ export default function UcardLandingPage() {
           <img 
             src="/images/app-mockup.png" 
             alt="Ucard Mobile App" 
-            className="relative z-10 w-full max-w-md rounded-2xl shadow-2xl"
+            className="relative z-10 w-full max-w-[380px] lg:max-w-[440px]"
           />
         </div>
 
@@ -694,7 +694,7 @@ export default function UcardLandingPage() {
             <img 
               src="/images/rewards-card.png" 
               alt="Level 12 Ucard Pro Rewards Card" 
-              className="w-72 rounded-2xl shadow-xl lg:w-80"
+              className="w-full max-w-[320px] lg:max-w-[400px]"
             />
           </div>
         </div>
@@ -729,22 +729,22 @@ export default function UcardLandingPage() {
             <img 
               src="/images/security-shield.png" 
               alt="Security Shield" 
-              className="w-24 shrink-0 lg:w-28"
+              className="w-28 shrink-0 lg:w-36"
             />
           </div>
         </div>
 
-        <div className="flex items-center gap-6 rounded-2xl bg-white p-6 shadow-sm">
-          <div className="w-1/2 shrink-0">
+        <div className="flex flex-col gap-4 rounded-2xl bg-white p-6 shadow-sm md:flex-row md:items-center md:gap-6">
+          <div className="md:w-2/5">
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">{t.globalAccess}</p>
             <h3 className="mt-1 text-xl font-extrabold">{t.useUcardAnywhere}</h3>
             <p className="mt-2 text-sm text-slate-600">{t.globalDesc}</p>
           </div>
-          <div className="w-1/2">
+          <div className="md:w-3/5">
             <img 
               src="/images/world-map.png" 
               alt="Global Access Map" 
-              className="w-full rounded-lg"
+              className="w-full"
             />
           </div>
         </div>
