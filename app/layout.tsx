@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: 'Ucard | USDT Debit Card',
     template: '%s | Ucard',
   },
-  description: 'A seamless USDT card designed for real-world payments. Earn yield, stay on-chain, and spend globally with Ucard. Licensed partners, KYC/AML compliant, and 256-bit encryption for secure transactions.',
+  description: 'A secure USDT debit card for global payments. Spend USDT anywhere, earn yield on idle balance, and use a crypto debit card backed by licensed partners with KYC/AML compliance and bank-grade encryption.',
   keywords: [
     'USDT card',
     'crypto debit card',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     url: 'https://ucard.app',
     siteName: 'Ucard',
     title: 'Ucard | USDT Debit Card',
-    description: 'A seamless USDT card designed for real-world payments. Earn yield, stay on-chain, and spend globally.',
+    description: 'Spend USDT globally, earn yield on your balance, and manage funds on-chain with a secure USDT debit card.',
     images: [
       {
         url: '/images/og-image.png',
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Ucard | USDT Debit Card',
-    description: 'A seamless USDT card designed for real-world payments. Earn yield, stay on-chain, and spend globally.',
+    description: 'USDT debit card for global payments. Spend, earn yield, and stay on-chain.',
     images: ['/images/og-image.png'],
     creator: '@ucard',
   },
