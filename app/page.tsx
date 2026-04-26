@@ -559,36 +559,29 @@ export default function UcardLandingPage() {
 
           <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
             <div className="text-center">
-              <div className="text-3xl font-black italic text-[#1a1f71]">VISA</div>
-              <p className="mt-1 text-xs text-slate-400">{t.globalNetwork}</p>
+              <img src="/images/visa-logo.jpg" alt="VISA" className="mx-auto h-10 w-auto object-contain" />
+              <p className="mt-2 text-xs text-slate-400">{t.globalNetwork}</p>
             </div>
           </div>
 
           <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
             <div className="text-center">
-              <div className="flex items-center justify-center">
-                <div className="h-7 w-7 rounded-full bg-red-500" />
-                <div className="-ml-2.5 h-7 w-7 rounded-full bg-orange-400 opacity-80" />
-              </div>
+              <img src="/images/mastercard-logo.jpg" alt="Mastercard" className="mx-auto h-10 w-auto object-contain" />
               <p className="mt-2 text-xs text-slate-400">{t.licensedPartner}</p>
             </div>
           </div>
 
           <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
             <div className="text-center">
-              <div className="text-lg font-bold text-slate-900">
-                <span className="text-[#2563EB]">∞</span> sumsub
-              </div>
-              <p className="mt-1 text-xs text-slate-400">KYC / AML</p>
+              <img src="/images/sumsub-logo.jpg" alt="Sumsub" className="mx-auto h-8 w-auto object-contain" />
+              <p className="mt-2 text-xs text-slate-400">KYC / AML</p>
               <p className="text-[10px] text-slate-300">{t.verified}</p>
             </div>
           </div>
 
           <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
             <div className="text-center">
-              <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full border-2 border-slate-300">
-                <ShieldCheck className="h-5 w-5 text-slate-400" />
-              </div>
+              <img src="/images/encryption-shield.jpg" alt="256-bit Encryption" className="mx-auto h-11 w-auto object-contain" />
               <p className="mt-2 text-xs text-slate-400">{t.encryption}</p>
               <p className="text-[10px] text-slate-300">{t.secureAndSafe}</p>
             </div>
