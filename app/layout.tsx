@@ -14,7 +14,7 @@ const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
 
 export const metadata: Metadata = {
   title: {
-    default: 'Ucard | Spend USDT Like Cash',
+    default: 'Ucard | Crypto Debit Card',
     template: '%s | Ucard',
   },
   description: 'A seamless USDT card designed for real-world payments. Earn yield, stay on-chain, and spend globally with Ucard. Licensed partners, KYC/AML compliant, and 256-bit encryption for secure transactions.',
@@ -49,20 +49,20 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://ucard.app',
     siteName: 'Ucard',
-    title: 'Ucard | Spend USDT Like Cash',
+    title: 'Ucard | Crypto Debit Card',
     description: 'A seamless USDT card designed for real-world payments. Earn yield, stay on-chain, and spend globally.',
     images: [
       {
         url: '/images/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Ucard | Spend USDT Like Cash',
+        alt: 'Ucard | Crypto Debit Card',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ucard | Spend USDT Like Cash',
+    title: 'Ucard | Crypto Debit Card',
     description: 'A seamless USDT card designed for real-world payments. Earn yield, stay on-chain, and spend globally.',
     images: ['/images/og-image.png'],
     creator: '@ucard',
