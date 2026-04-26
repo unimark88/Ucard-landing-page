@@ -1,0 +1,21 @@
+{
+  "name": "Ucard - Spend Your USDT Like Cash",
+  "short_name": "Ucard",
+  "description": "A seamless USDT card designed for real-world payments. Earn yield, stay on-chain, and spend globally.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1E3A8A",
+  "icons": [
+    {
+      "src": "/images/ucard-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/ucard-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
