@@ -689,12 +689,12 @@ export default function UcardLandingPage() {
             </button>
           </div>
 
-          <div className="flex items-center justify-center py-8 lg:py-0">
+          <div className="flex items-center justify-center overflow-hidden py-8 lg:py-0">
             {/* Rewards card */}
             <img 
               src="/images/rewards-card.png" 
               alt="Level 12 Ucard Pro Rewards Card" 
-              className="w-full"
+              className="w-[140%] max-w-none lg:w-[160%]"
             />
           </div>
         </div>
