@@ -13,8 +13,6 @@ import {
   CreditCard,
   Send,
   ChevronDown,
-  Apple,
-  Play,
   Flame,
   UserPlus,
   X,
@@ -632,60 +630,12 @@ export default function UcardLandingPage() {
           <div className="absolute h-[350px] w-[350px] rounded-full bg-gradient-to-br from-blue-300/40 to-blue-500/30 blur-[80px]" />
           <div className="absolute -right-10 top-20 h-[200px] w-[200px] rounded-full bg-gradient-to-tr from-blue-400/30 to-blue-300/20 blur-[60px]" />
           
-          {/* Phone with Card */}
-          <div className="relative w-72 rounded-[2.5rem] border-[8px] border-slate-900 bg-white shadow-2xl">
-            <div className="absolute left-1/2 top-3 h-5 w-20 -translate-x-1/2 rounded-full bg-slate-900" />
-            <div className="p-5 pt-10">
-              <div className="mb-3 flex items-center gap-2">
-                <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-gradient-to-br from-[#1E3A8A] to-[#3B82F6]">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="h-3 w-3"
-                    stroke="white"
-                    strokeWidth="2"
-                  >
-                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  </svg>
-                </div>
-                <span className="text-sm font-bold">Ucard</span>
-              </div>
-
-              <div className="rounded-xl bg-gradient-to-br from-[#0a1628] to-[#1E3A8A] p-4 text-white">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs opacity-80">Virtual Card</span>
-                </div>
-                <div className="mt-8 flex items-center gap-2">
-                  <div className="h-6 w-8 rounded bg-gradient-to-br from-yellow-300 to-yellow-500" />
-                </div>
-                <div className="mt-3 text-right text-xl font-black italic">VISA</div>
-              </div>
-
-              <div className="mt-4">
-                <p className="text-xs text-slate-500">{t.availableBalance}</p>
-                <h3 className="text-2xl font-extrabold">
-                  12,856.00 <span className="text-sm font-bold text-slate-400">USDT</span>
-                </h3>
-                <p className="text-xs text-green-500">+ $12,856.00</p>
-              </div>
-
-              <div className="mt-4 grid grid-cols-4 gap-2">
-                {[
-                  { icon: "❄️", label: t.freezeCard },
-                  { icon: "ℹ️", label: t.cardDetails },
-                  { icon: "⚙️", label: t.limitSettings },
-                  { icon: "•••", label: t.more },
-                ].map((item) => (
-                  <div key={item.label} className="text-center">
-                    <div className="mx-auto mb-1 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 text-sm">
-                      {item.icon}
-                    </div>
-                    <span className="text-[8px] text-slate-500">{item.label}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          {/* App Mockup Image */}
+          <img 
+            src="/images/app-mockup.jpg" 
+            alt="Ucard Mobile App" 
+            className="relative z-10 w-full max-w-md rounded-2xl shadow-2xl"
+          />
         </div>
 
         <div>
@@ -712,21 +662,21 @@ export default function UcardLandingPage() {
             ))}
           </div>
 
-          <div className="mt-8 flex gap-3">
-            <button className="flex cursor-pointer items-center gap-2 rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800">
-              <Apple size={18} />
-              <div className="text-left">
-                <p className="text-[7px] leading-tight opacity-70">{t.downloadOn}</p>
-                <p className="text-xs font-semibold leading-tight">{t.appStore}</p>
-              </div>
-            </button>
-            <button className="flex cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium transition hover:bg-slate-50">
-              <Play size={18} className="fill-current" />
-              <div className="text-left">
-                <p className="text-[7px] leading-tight text-slate-500">{t.getItOn}</p>
-                <p className="text-xs font-semibold leading-tight">{t.googlePlay}</p>
-              </div>
-            </button>
+          <div className="mt-8 flex gap-4">
+            <a href="#" className="cursor-pointer transition hover:opacity-80">
+              <img 
+                src="/images/app-store-badge.jpg" 
+                alt="Download on App Store" 
+                className="h-10 w-auto rounded-md"
+              />
+            </a>
+            <a href="#" className="cursor-pointer transition hover:opacity-80">
+              <img 
+                src="/images/google-play-badge.jpg" 
+                alt="Get it on Google Play" 
+                className="h-10 w-auto rounded-md"
+              />
+            </a>
           </div>
         </div>
       </section>
