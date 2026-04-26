@@ -458,30 +458,30 @@ export default function UcardLandingPage() {
       {/* HERO */}
       <section className="relative mx-auto max-w-7xl px-6 pb-10 pt-8">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">
-          <div>
+          <div className="text-center lg:text-left">
             <div className="mb-4 inline-flex rounded-md border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-[#1E3A8A]">
               {t.heroBadge}
             </div>
 
-            <h1 className="max-w-xl text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
+            <h1 className="mx-auto max-w-xl text-3xl font-extrabold leading-[1.1] tracking-tight md:text-4xl lg:mx-0 lg:text-6xl">
               {t.heroTitle1}{" "}
               <span className="text-[#2563EB]">{t.heroTitle2}</span>
             </h1>
 
-            <p className="mt-4 max-w-md text-lg leading-relaxed text-slate-600">
+            <p className="mx-auto mt-4 max-w-md text-base leading-relaxed text-slate-600 lg:mx-0 lg:text-lg">
               {t.heroDesc}
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-4">
-              <button className="flex cursor-pointer items-center gap-2 rounded-md bg-[#1E3A8A] px-6 py-3 font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90">
-                {t.getYourUcard} <ArrowRight size={18} />
+            <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start lg:gap-4">
+              <button className="flex cursor-pointer items-center gap-2 rounded-md bg-[#1E3A8A] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90 md:px-6 md:py-3 md:text-base">
+                {t.getYourUcard} <ArrowRight size={16} />
               </button>
-              <button className="cursor-pointer rounded-md border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-900 transition hover:bg-slate-50">
+              <button className="cursor-pointer rounded-md border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 md:px-6 md:py-3 md:text-base">
                 {t.learnMore}
               </button>
             </div>
 
-            <div className="mt-8 flex items-center gap-4">
+            <div className="mt-6 flex items-center justify-center gap-4 lg:justify-start lg:mt-8">
               <div className="flex -space-x-3">
                 {[
                   "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face",
@@ -514,7 +514,7 @@ export default function UcardLandingPage() {
 
           {/* HERO MOCKUP */}
           <div className="flex justify-center lg:justify-end lg:-mr-10 lg:overflow-visible">
-            <div className="w-full max-w-none md:scale-110 lg:scale-125 lg:origin-right">
+            <div className="w-full max-w-[320px] md:max-w-none md:scale-110 lg:scale-125 lg:origin-right">
               <img 
                 src="/images/ucard-card.png" 
                 alt="Ucard USDT Card" 
@@ -526,44 +526,44 @@ export default function UcardLandingPage() {
       </section>
 
       {/* TRUST BAR */}
-      <section className="mx-auto max-w-7xl px-6 pb-10">
-        <div className="flex flex-col gap-6 rounded-2xl bg-[#EFF6FF] p-5 shadow-sm md:flex-row md:items-center md:gap-8 md:p-6">
+      <section className="mx-auto max-w-7xl px-6 pb-8">
+        <div className="flex flex-col gap-4 rounded-2xl bg-[#EFF6FF] p-4 shadow-sm md:flex-row md:items-center md:gap-6 md:p-6">
           <div className="text-center md:w-[20%] md:text-left">
-            <h3 className="text-base font-bold leading-snug">{t.trustTitle}</h3>
-            <p className="mt-1 text-xs leading-relaxed text-slate-500">
+            <h3 className="text-sm font-bold leading-snug md:text-base">{t.trustTitle}</h3>
+            <p className="mt-1 hidden text-xs leading-relaxed text-slate-500 md:block">
               {t.trustDesc}
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 md:w-[80%] md:grid-cols-4">
+          <div className="grid grid-cols-4 gap-2 md:w-[80%] md:gap-4">
             <div className="flex flex-col items-center text-center">
-              <div className="flex h-10 items-center md:h-12">
-                <img src="/images/visa-logo.png" alt="VISA" className="h-8 w-auto object-contain md:h-10" />
+              <div className="flex h-8 items-center md:h-12">
+                <img src="/images/visa-logo.png" alt="VISA" className="h-6 w-auto object-contain md:h-10" />
               </div>
-              <p className="text-sm text-slate-500">{t.globalNetwork}</p>
+              <p className="text-[10px] text-slate-500 md:text-sm">{t.globalNetwork}</p>
             </div>
 
             <div className="flex flex-col items-center text-center">
-              <div className="flex h-10 items-center md:h-12">
-                <img src="/images/mastercard-logo.png" alt="Mastercard" className="h-8 w-auto object-contain md:h-10" />
+              <div className="flex h-8 items-center md:h-12">
+                <img src="/images/mastercard-logo.png" alt="Mastercard" className="h-6 w-auto object-contain md:h-10" />
               </div>
-              <p className="text-sm text-slate-500">{t.licensedPartner}</p>
+              <p className="text-[10px] text-slate-500 md:text-sm">{t.licensedPartner}</p>
             </div>
 
             <div className="flex flex-col items-center text-center">
-              <div className="flex h-10 items-center md:h-12">
-                <img src="/images/sumsub-logo.png" alt="Sumsub" className="h-6 w-auto object-contain md:h-8" />
+              <div className="flex h-8 items-center md:h-12">
+                <img src="/images/sumsub-logo.png" alt="Sumsub" className="h-5 w-auto object-contain md:h-8" />
               </div>
-              <p className="text-sm text-slate-500">KYC / AML</p>
-              <p className="text-xs text-slate-400">{t.verified}</p>
+              <p className="text-[10px] text-slate-500 md:text-sm">KYC / AML</p>
+              <p className="hidden text-xs text-slate-400 md:block">{t.verified}</p>
             </div>
 
             <div className="flex flex-col items-center text-center">
-              <div className="flex h-10 items-center md:h-12">
-                <img src="/images/encryption-shield.png" alt="256-bit Encryption" className="h-9 w-auto object-contain md:h-11" />
+              <div className="flex h-8 items-center md:h-12">
+                <img src="/images/encryption-shield.png" alt="256-bit Encryption" className="h-7 w-auto object-contain md:h-11" />
               </div>
-              <p className="text-sm text-slate-500">{t.encryption}</p>
-              <p className="text-xs text-slate-400">{t.secureAndSafe}</p>
+              <p className="text-[10px] text-slate-500 md:text-sm">{t.encryption}</p>
+              <p className="hidden text-xs text-slate-400 md:block">{t.secureAndSafe}</p>
             </div>
           </div>
         </div>
