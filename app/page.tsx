@@ -524,7 +524,7 @@ export default function UcardLandingPage() {
           {/* Card Image */}
           <div className="absolute -left-4 top-24 z-20 w-72 rotate-[-12deg] lg:left-0 lg:w-80">
             <img 
-              src="/images/ucard-card.png" 
+              src="/images/ucard-card.jpg" 
               alt="Ucard USDT Card" 
               className="w-full rounded-2xl shadow-2xl"
             />
@@ -533,7 +533,7 @@ export default function UcardLandingPage() {
           {/* Phone Image */}
           <div className="relative z-10 w-64 lg:w-72">
             <img 
-              src="/images/ucard-phone.png" 
+              src="/images/ucard-phone.jpg" 
               alt="Ucard Mobile App" 
               className="w-full rounded-[2rem] shadow-2xl"
             />
@@ -553,21 +553,21 @@ export default function UcardLandingPage() {
 
           <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
             <div className="text-center">
-              <img src="/images/visa-logo.png" alt="VISA" className="mx-auto h-10 w-auto object-contain" />
+              <img src="/images/visa-logo.jpg" alt="VISA" className="mx-auto h-10 w-auto object-contain" />
               <p className="mt-2 text-xs text-slate-400">{t.globalNetwork}</p>
             </div>
           </div>
 
           <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
             <div className="text-center">
-              <img src="/images/mastercard-logo.png" alt="Mastercard" className="mx-auto h-10 w-auto object-contain" />
+              <img src="/images/mastercard-logo.jpg" alt="Mastercard" className="mx-auto h-10 w-auto object-contain" />
               <p className="mt-2 text-xs text-slate-400">{t.licensedPartner}</p>
             </div>
           </div>
 
           <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
             <div className="text-center">
-              <img src="/images/sumsub-logo.png" alt="Sumsub" className="mx-auto h-8 w-auto object-contain" />
+              <img src="/images/sumsub-logo.jpg" alt="Sumsub" className="mx-auto h-8 w-auto object-contain" />
               <p className="mt-2 text-xs text-slate-400">KYC / AML</p>
               <p className="text-[10px] text-slate-300">{t.verified}</p>
             </div>
@@ -575,7 +575,7 @@ export default function UcardLandingPage() {
 
           <div className="flex items-center justify-center border-slate-200/60 md:border-l md:pl-6">
             <div className="text-center">
-              <img src="/images/encryption-shield.png" alt="256-bit Encryption" className="mx-auto h-11 w-auto object-contain" />
+              <img src="/images/encryption-shield.jpg" alt="256-bit Encryption" className="mx-auto h-11 w-auto object-contain" />
               <p className="mt-2 text-xs text-slate-400">{t.encryption}</p>
               <p className="text-[10px] text-slate-300">{t.secureAndSafe}</p>
             </div>
@@ -628,7 +628,7 @@ export default function UcardLandingPage() {
           
           {/* App Mockup Image */}
           <img 
-            src="/images/app-mockup.png" 
+            src="/images/app-mockup.jpg" 
             alt="Ucard Mobile App" 
             className="relative z-10 w-full max-w-md rounded-2xl shadow-2xl"
           />
@@ -661,14 +661,14 @@ export default function UcardLandingPage() {
           <div className="mt-8 flex gap-4">
             <a href="#" className="cursor-pointer transition hover:opacity-80">
               <img 
-                src="/images/app-store-badge.png" 
+                src="/images/app-store-badge.jpg" 
                 alt="Download on App Store" 
                 className="h-10 w-auto rounded-md"
               />
             </a>
             <a href="#" className="cursor-pointer transition hover:opacity-80">
               <img 
-                src="/images/google-play-badge.png" 
+                src="/images/google-play-badge.jpg" 
                 alt="Get it on Google Play" 
                 className="h-10 w-auto rounded-md"
               />
@@ -701,14 +701,14 @@ export default function UcardLandingPage() {
           <div className="flex items-center justify-center gap-4 py-8 lg:gap-6 lg:py-0">
             {/* Rewards card */}
             <img 
-              src="/images/rewards-card.png" 
+              src="/images/rewards-card.jpg" 
               alt="Level 12 Ucard Pro Rewards Card" 
               className="w-64 rounded-2xl shadow-xl lg:w-72"
             />
             
             {/* Gift box */}
             <img 
-              src="/images/gift-box.png" 
+              src="/images/gift-box.jpg" 
               alt="Rewards" 
               className="w-28 lg:w-36"
             />
@@ -743,7 +743,7 @@ export default function UcardLandingPage() {
             </div>
             {/* Security Shield Image */}
             <img 
-              src="/images/security-shield.png" 
+              src="/images/security-shield.jpg" 
               alt="Security Shield" 
               className="w-24 shrink-0 lg:w-28"
             />
@@ -758,7 +758,7 @@ export default function UcardLandingPage() {
           </div>
           <div className="w-1/2">
             <img 
-              src="/images/world-map.png" 
+              src="/images/world-map.jpg" 
               alt="Global Access Map" 
               className="w-full rounded-lg"
             />
