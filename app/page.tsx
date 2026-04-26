@@ -521,21 +521,12 @@ export default function UcardLandingPage() {
           <div className="absolute -right-10 top-10 h-[350px] w-[350px] rounded-full bg-gradient-to-br from-blue-400/40 to-blue-600/30 blur-[80px]" />
           <div className="absolute -left-20 bottom-20 h-[250px] w-[250px] rounded-full bg-gradient-to-tr from-blue-300/30 to-blue-500/20 blur-[60px]" />
 
-          {/* Card Image */}
-          <div className="absolute -left-4 top-24 z-20 w-72 rotate-[-12deg] lg:left-0 lg:w-80">
+          {/* Hero Image */}
+          <div className="relative z-10 w-80 lg:w-96">
             <img 
               src="/images/ucard-card.png" 
               alt="Ucard USDT Card" 
-              className="w-full rounded-2xl shadow-2xl"
-            />
-          </div>
-
-          {/* Phone Image */}
-          <div className="relative z-10 w-64 lg:w-72">
-            <img 
-              src="/images/ucard-phone.png" 
-              alt="Ucard Mobile App" 
-              className="w-full rounded-[2rem] shadow-2xl"
+              className="w-full"
             />
           </div>
         </div>
