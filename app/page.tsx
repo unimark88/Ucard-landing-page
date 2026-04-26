@@ -673,15 +673,15 @@ export default function UcardLandingPage() {
         {/* Background glow */}
         <div className="pointer-events-none absolute -right-40 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-gradient-to-bl from-blue-400/30 to-blue-600/20 blur-[100px]" />
         
-        <div className="relative grid gap-8 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 lg:grid-cols-2 lg:p-10">
-          <div className="flex flex-col justify-center">
+        <div className="relative flex flex-col gap-6 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-8 lg:flex-row lg:items-center lg:p-10">
+          <div className="flex flex-col justify-center lg:w-1/4">
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
               {t.levelUpExperience}
             </p>
-            <h2 className="mt-3 text-3xl font-extrabold leading-tight lg:text-4xl">
+            <h2 className="mt-3 text-2xl font-extrabold leading-tight lg:text-3xl">
               {t.moreThanCard}<br />{t.itsAJourney}
             </h2>
-            <p className="mt-4 max-w-md text-slate-600">
+            <p className="mt-4 text-sm text-slate-600">
               {t.rewardsDesc}
             </p>
             <button className="mt-6 inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-900 transition hover:bg-slate-50">
@@ -689,12 +689,12 @@ export default function UcardLandingPage() {
             </button>
           </div>
 
-          <div className="flex items-center justify-center overflow-hidden py-8 lg:py-0">
+          <div className="flex items-center justify-center lg:w-3/4">
             {/* Rewards card */}
             <img 
               src="/images/rewards-card.png" 
               alt="Level 12 Ucard Pro Rewards Card" 
-              className="w-[140%] max-w-none lg:w-[160%]"
+              className="w-full"
             />
           </div>
         </div>
