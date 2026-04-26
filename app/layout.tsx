@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: 'Ucard | USDT Debit Card',
     template: '%s | Ucard',
   },
-  description: 'A secure USDT debit card for global payments. Spend USDT anywhere, earn yield on idle balance, and manage funds on-chain with licensed partners, KYC/AML compliance, and bank-grade encryption.',
+  description: 'A secure USDT debit card for global payments. Spend USDT anywhere, earn yield on idle balance, and use a crypto debit card backed by licensed partners with KYC/AML compliance and bank-grade encryption.',
   keywords: [
     'USDT card',
     'crypto debit card',
