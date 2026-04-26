@@ -6,6 +6,12 @@ import './globals.css'
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
+const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL 
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : process.env.VERCEL_URL 
+    ? `https://${process.env.VERCEL_URL}`
+    : 'https://ucard.app'
+
 export const metadata: Metadata = {
   title: {
     default: 'Ucard - Spend Your USDT Like Cash',
@@ -29,7 +35,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Ucard' }],
   creator: 'Ucard',
   publisher: 'Ucard',
-  metadataBase: new URL('https://ucard.app'),
+  metadataBase: new URL(siteUrl),
   alternates: {
     canonical: '/',
     languages: {
