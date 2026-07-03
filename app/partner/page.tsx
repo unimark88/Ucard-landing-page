@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import Link from "next/link"
 import {
   ArrowRight,
   Users,
@@ -9,7 +8,6 @@ import {
   Globe2,
   BadgeDollarSign,
   Headphones,
-  ChevronRight,
   CheckCircle,
 } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
@@ -119,17 +117,6 @@ export default function PartnerPage() {
     <main className="min-h-screen bg-[#F8FAFC] text-slate-950">
       <SiteHeader />
 
-      {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-6 pt-6">
-        <ol className="flex items-center gap-1 text-sm text-slate-500">
-          <li>
-            <Link href="/" className="hover:text-slate-900">Home</Link>
-          </li>
-          <li aria-hidden="true"><ChevronRight className="h-4 w-4" /></li>
-          <li className="font-medium text-slate-900" aria-current="page">Partners</li>
-        </ol>
-      </nav>
-
       {/* HERO */}
       <section className="mx-auto max-w-3xl px-6 py-10 text-center">
         <div className="mb-4 inline-flex rounded-md border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-[#1E3A8A]">
@@ -142,20 +129,6 @@ export default function PartnerPage() {
           Join the Ucard partner program and help expand the future of crypto payments. Earn commissions by distributing
           the USDT Visa card, referring businesses, and bringing stablecoin spending to your market.
         </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <a
-            href="mailto:partners@ucard.cc?subject=Ucard%20Partner%20Application"
-            className="inline-flex items-center gap-2 rounded-md bg-[#1E3A8A] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90 md:text-base"
-          >
-            Apply to Partner <ArrowRight size={16} />
-          </a>
-          <Link
-            href="/info"
-            className="inline-flex items-center gap-2 rounded-md border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 md:text-base"
-          >
-            How Ucard Works
-          </Link>
-        </div>
       </section>
 
       {/* PARTNER TYPES */}

@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { ArrowRight, CreditCard, ShieldCheck, Globe2, Wallet, CheckCircle, ChevronRight } from "lucide-react"
+import { ArrowRight, CreditCard, ShieldCheck, Globe2, Wallet, CheckCircle } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { SignupForm } from "@/components/signup-form"
@@ -89,17 +89,6 @@ export default function ApplyPage() {
   return (
     <main className="min-h-screen bg-[#F8FAFC] text-slate-950">
       <SiteHeader />
-
-      {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-6 pt-6">
-        <ol className="flex items-center gap-1 text-sm text-slate-500">
-          <li>
-            <Link href="/" className="hover:text-slate-900">Home</Link>
-          </li>
-          <li aria-hidden="true"><ChevronRight className="h-4 w-4" /></li>
-          <li className="font-medium text-slate-900" aria-current="page">Get Your Ucard</li>
-        </ol>
-      </nav>
 
       {/* HERO + FORM */}
       <section className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-8 px-6 py-8 lg:grid-cols-2 lg:gap-12">

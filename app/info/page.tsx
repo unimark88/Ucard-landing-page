@@ -9,7 +9,6 @@ import {
   Wallet,
   Coins,
   Lock,
-  ChevronRight,
   CheckCircle,
 } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
@@ -128,17 +127,6 @@ export default function InfoPage() {
     <main className="min-h-screen bg-[#F8FAFC] text-slate-950">
       <SiteHeader />
 
-      {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-6 pt-6">
-        <ol className="flex items-center gap-1 text-sm text-slate-500">
-          <li>
-            <Link href="/" className="hover:text-slate-900">Home</Link>
-          </li>
-          <li aria-hidden="true"><ChevronRight className="h-4 w-4" /></li>
-          <li className="font-medium text-slate-900" aria-current="page">How It Works</li>
-        </ol>
-      </nav>
-
       {/* HERO */}
       <section className="mx-auto max-w-3xl px-6 py-10 text-center">
         <div className="mb-4 inline-flex rounded-md border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-[#1E3A8A]">
@@ -152,20 +140,6 @@ export default function InfoPage() {
           local currency at checkout, so you can pay online, in stores, and at ATMs anywhere Visa and Mastercard are
           accepted — while your idle balance keeps earning yield on-chain.
         </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <Link
-            href="/apply"
-            className="inline-flex items-center gap-2 rounded-md bg-[#1E3A8A] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90 md:text-base"
-          >
-            Get Your Ucard <ArrowRight size={16} />
-          </Link>
-          <Link
-            href="/explore"
-            className="inline-flex items-center gap-2 rounded-md border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 md:text-base"
-          >
-            Explore Rewards
-          </Link>
-        </div>
       </section>
 
       {/* HOW IT WORKS */}
