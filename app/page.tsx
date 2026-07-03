@@ -15,6 +15,7 @@ import {
   Star,
   Check,
 } from "lucide-react"
+import { SignupForm } from "@/components/signup-form"
 
 const languages = [
   { code: "EN", name: "English", flag: "🇺🇸" },
@@ -33,8 +34,32 @@ const translations = {
     heroTitle2: "Like Cash",
     heroDesc: "A seamless USDT card designed for real-world payments. Earn yield, stay on-chain, and spend globally.",
     getYourUcard: "Get Your Ucard",
+    launchApp: "Launch App",
     learnMore: "Learn More",
     trustedBy: "Trusted by 50,000+ users worldwide",
+    // Learn More section
+    learnMoreTitle: "How Ucard Works",
+    learnMoreSubtitle: "A crypto debit card built for real life",
+    learnMoreDesc: "Ucard turns your USDT into everyday spending power. Top up with stablecoins, spend anywhere Visa and Mastercard are accepted, and keep full visibility of every transaction on-chain. Your idle balance keeps earning yield while you spend — no lock-ups, no hidden fees.",
+    learnMorePoint1Title: "Top up with USDT",
+    learnMorePoint1Desc: "Fund your card instantly from your on-chain wallet or exchange.",
+    learnMorePoint2Title: "Spend globally",
+    learnMorePoint2Desc: "Pay online and in-store across 180+ countries with instant conversion.",
+    learnMorePoint3Title: "Earn while you hold",
+    learnMorePoint3Desc: "Your idle USDT generates transparent DeFi yield automatically.",
+    // Signup form
+    formTitle: "Get Your Ucard",
+    formSubtitle: "Join the waitlist and be first to spend your USDT like cash.",
+    formName: "Full Name",
+    formNamePlaceholder: "Jane Doe",
+    formEmail: "Email Address",
+    formEmailPlaceholder: "you@example.com",
+    formCountry: "Country",
+    formCountryPlaceholder: "Select your country",
+    formSubmit: "Join the Waitlist",
+    formSubmitting: "Submitting...",
+    formSuccessTitle: "You're on the list!",
+    formSuccessDesc: "Thanks for signing up. We'll email you as soon as your Ucard is ready.",
     // Phone
     hello: "Hello, Ucarder",
     totalBalance: "Total Balance",
@@ -145,8 +170,32 @@ const translations = {
     heroTitle2: "消费 USDT",
     heroDesc: "一张专为现实支付设计的无缝 USDT 卡。赚取收益，保持链上，全球消费。",
     getYourUcard: "获取您的 Ucard",
+    launchApp: "启动应用",
     learnMore: "了解更多",
     trustedBy: "全球超过 50,000 名用户信赖",
+    // Learn More section
+    learnMoreTitle: "Ucard 如何运作",
+    learnMoreSubtitle: "为现实生活打造的加密借记卡",
+    learnMoreDesc: "Ucard 将您的 USDT 转化为日常消费能力。用稳定币充值，在任何接受 Visa 和 Mastercard 的地方消费，并在链上完整查看每一笔交易。消费的同时，闲置余额持续赚取收益——无锁定期，无隐藏费用。",
+    learnMorePoint1Title: "用 USDT 充值",
+    learnMorePoint1Desc: "从您的链上钱包或交易所即时为卡充值。",
+    learnMorePoint2Title: "全球消费",
+    learnMorePoint2Desc: "在 180+ 个国家在线和门店支付，即时兑换。",
+    learnMorePoint3Title: "持有即赚取",
+    learnMorePoint3Desc: "您闲置的 USDT 自动产生透明的 DeFi 收益。",
+    // Signup form
+    formTitle: "获取您的 Ucard",
+    formSubtitle: "加入候补名单，率先像现金一样消费您的 USDT。",
+    formName: "全名",
+    formNamePlaceholder: "张三",
+    formEmail: "电子邮箱",
+    formEmailPlaceholder: "you@example.com",
+    formCountry: "国家/地区",
+    formCountryPlaceholder: "选择您的国家/地区",
+    formSubmit: "加入候补名单",
+    formSubmitting: "提交中...",
+    formSuccessTitle: "您已在名单上！",
+    formSuccessDesc: "感谢您的注册。您的 Ucard 准备就绪后，我们会立即通过邮件通知您。",
     // Phone
     hello: "你好，Ucarder",
     totalBalance: "总余额",
@@ -229,7 +278,7 @@ const translations = {
     footerProducts: "产品",
     footerCompany: "公司",
     footerSupport: "支持",
-    footerLegal: "法律",
+    footerLegal: "���律",
     ucardCard: "Ucard 卡",
     app: "应用",
     careers: "��聘",
@@ -257,8 +306,32 @@ const translations = {
     heroTitle2: "Seperti Uang Tunai",
     heroDesc: "Kartu USDT tanpa hambatan yang dirancang untuk pembayaran dunia nyata. Dapatkan hasil, tetap di blockchain, dan belanja secara global.",
     getYourUcard: "Dapatkan Ucard Anda",
+    launchApp: "Luncurkan Aplikasi",
     learnMore: "Pelajari Lebih Lanjut",
     trustedBy: "Dipercaya oleh 50.000+ pengguna di seluruh dunia",
+    // Learn More section
+    learnMoreTitle: "Cara Kerja Ucard",
+    learnMoreSubtitle: "Kartu debit kripto untuk kehidupan nyata",
+    learnMoreDesc: "Ucard mengubah USDT Anda menjadi daya beli sehari-hari. Isi ulang dengan stablecoin, belanja di mana saja Visa dan Mastercard diterima, dan pantau setiap transaksi secara on-chain. Saldo menganggur Anda tetap menghasilkan yield saat Anda berbelanja — tanpa penguncian, tanpa biaya tersembunyi.",
+    learnMorePoint1Title: "Isi ulang dengan USDT",
+    learnMorePoint1Desc: "Danai kartu Anda secara instan dari dompet on-chain atau bursa.",
+    learnMorePoint2Title: "Belanja global",
+    learnMorePoint2Desc: "Bayar online dan di toko di 180+ negara dengan konversi instan.",
+    learnMorePoint3Title: "Hasilkan saat menyimpan",
+    learnMorePoint3Desc: "USDT menganggur Anda menghasilkan yield DeFi yang transparan secara otomatis.",
+    // Signup form
+    formTitle: "Dapatkan Ucard Anda",
+    formSubtitle: "Bergabunglah dengan daftar tunggu dan jadilah yang pertama membelanjakan USDT Anda seperti uang tunai.",
+    formName: "Nama Lengkap",
+    formNamePlaceholder: "Budi Santoso",
+    formEmail: "Alamat Email",
+    formEmailPlaceholder: "anda@contoh.com",
+    formCountry: "Negara",
+    formCountryPlaceholder: "Pilih negara Anda",
+    formSubmit: "Gabung Daftar Tunggu",
+    formSubmitting: "Mengirim...",
+    formSuccessTitle: "Anda sudah terdaftar!",
+    formSuccessDesc: "Terima kasih telah mendaftar. Kami akan mengirim email segera setelah Ucard Anda siap.",
     // Phone
     hello: "Halo, Ucarder",
     totalBalance: "Total Saldo",
@@ -465,14 +538,22 @@ export default function UcardLandingPage() {
               {t.heroDesc}
             </p>
 
-            <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start lg:gap-4">
-              <button className="flex cursor-pointer items-center gap-2 rounded-md bg-[#1E3A8A] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90 md:px-6 md:py-3 md:text-base">
-                {t.getYourUcard} <ArrowRight size={16} />
-              </button>
-              <button className="cursor-pointer rounded-md border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 md:px-6 md:py-3 md:text-base">
-                {t.learnMore}
-              </button>
-            </div>
+  <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start lg:gap-4">
+  <a
+    href="https://app.ucard.cc"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex cursor-pointer items-center gap-2 rounded-md bg-[#1E3A8A] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90 md:px-6 md:py-3 md:text-base"
+  >
+    {t.launchApp} <ArrowRight size={16} />
+  </a>
+  <a
+    href="#learn-more"
+    className="cursor-pointer rounded-md border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 md:px-6 md:py-3 md:text-base"
+  >
+    {t.learnMore}
+  </a>
+  </div>
 
             <div className="mt-6 flex items-center justify-center gap-4 lg:justify-start lg:mt-8">
               <div className="flex -space-x-3">
@@ -558,6 +639,67 @@ export default function UcardLandingPage() {
               <p className="text-[10px] text-slate-500 md:text-sm">{t.encryption}</p>
               <p className="hidden text-xs text-slate-400 md:block">{t.secureAndSafe}</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LEARN MORE */}
+      <section id="learn-more" className="mx-auto max-w-7xl scroll-mt-24 px-6 pb-10">
+        <div className="grid grid-cols-1 items-start gap-8 rounded-2xl bg-[#EFF6FF] p-6 md:p-10 lg:grid-cols-2 lg:gap-12">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
+              {t.learnMoreSubtitle}
+            </p>
+            <h2 className="mt-2 text-2xl font-extrabold leading-tight tracking-tight md:text-3xl">
+              {t.learnMoreTitle}
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
+              {t.learnMoreDesc}
+            </p>
+
+            <div className="mt-6 flex flex-col gap-4">
+              {[
+                { icon: CreditCard, title: t.learnMorePoint1Title, desc: t.learnMorePoint1Desc },
+                { icon: Globe2, title: t.learnMorePoint2Title, desc: t.learnMorePoint2Desc },
+                { icon: TrendingUp, title: t.learnMorePoint3Title, desc: t.learnMorePoint3Desc },
+              ].map((point, i) => (
+                <div key={i} className="flex gap-3">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white shadow-sm">
+                    <point.icon className="h-5 w-5 text-[#2563EB]" />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-slate-900">{point.title}</h3>
+                    <p className="mt-0.5 text-sm leading-relaxed text-slate-500">{point.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <a
+              href="#get-card"
+              className="mt-8 inline-flex cursor-pointer items-center gap-2 rounded-md bg-[#1E3A8A] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90 md:text-base"
+            >
+              {t.getYourUcard} <ArrowRight size={16} />
+            </a>
+          </div>
+
+          <div id="get-card" className="scroll-mt-24">
+            <SignupForm
+              labels={{
+                title: t.formTitle,
+                subtitle: t.formSubtitle,
+                name: t.formName,
+                namePlaceholder: t.formNamePlaceholder,
+                email: t.formEmail,
+                emailPlaceholder: t.formEmailPlaceholder,
+                country: t.formCountry,
+                countryPlaceholder: t.formCountryPlaceholder,
+                submit: t.formSubmit,
+                submitting: t.formSubmitting,
+                successTitle: t.formSuccessTitle,
+                successDesc: t.formSuccessDesc,
+              }}
+            />
           </div>
         </div>
       </section>
@@ -749,9 +891,9 @@ export default function UcardLandingPage() {
             {t.ctaTitle}
           </h2>
           <p className="mt-2 text-blue-200">{t.ctaSubtitle}</p>
-          <button className="mt-5 inline-flex cursor-pointer items-center gap-2 rounded-md bg-white px-6 py-3 font-bold text-[#1E3A8A] transition hover:bg-slate-100">
-            {t.getYourUcard} <ArrowRight size={18} />
-          </button>
+  <a href="#get-card" className="mt-5 inline-flex cursor-pointer items-center gap-2 rounded-md bg-white px-6 py-3 font-bold text-[#1E3A8A] transition hover:bg-slate-100">
+    {t.getYourUcard} <ArrowRight size={18} />
+  </a>
         </div>
       </section>
 
