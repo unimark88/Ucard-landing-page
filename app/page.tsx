@@ -13,6 +13,7 @@ import {
   Send,
   ChevronDown,
   X,
+  Menu,
   Star,
   Check,
 } from "lucide-react"
@@ -212,7 +213,7 @@ const translations = {
     profile: "个人资料",
     // Trust bar
     trustTitle: "受监管和可信的基础设施",
-    trustDesc: "由持牌合作伙伴和全球支付网络提供支持。完全符合 KYC/AML 标准，具有安全的链上透明度。",
+    trustDesc: "由持牌合作伙伴和全球支付网络提��支持。完全符合 KYC/AML 标准，具有安全的链上透明度。",
     globalNetwork: "全球支付网络",
     licensedPartner: "持牌合作伙伴",
     verified: "已验证",
@@ -439,6 +440,7 @@ type LangCode = keyof typeof translations
 export default function UcardLandingPage() {
   const [selectedLang, setSelectedLang] = useState(languages[0])
   const [langDropdownOpen, setLangDropdownOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const langDropdownRef = useRef<HTMLDivElement>(null)
 
   // Get translations for current language
@@ -514,12 +516,43 @@ export default function UcardLandingPage() {
             href="https://app.ucard.cc"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer rounded-md bg-[#1E3A8A] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90"
+            className="hidden cursor-pointer rounded-md bg-[#1E3A8A] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90 sm:inline-block"
           >
             {t.getUcard} <ArrowRight className="ml-1 inline h-4 w-4" />
           </a>
+
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen((v) => !v)}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileMenuOpen}
+            className="flex h-10 w-10 items-center justify-center rounded-md text-slate-700 transition hover:bg-slate-100 lg:hidden"
+          >
+            {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
         </div>
       </header>
+
+      {/* MOBILE MENU */}
+      {mobileMenuOpen && (
+        <nav className="border-b border-slate-200 bg-[#F8FAFC] px-6 py-4 lg:hidden">
+          <div className="mx-auto flex max-w-7xl flex-col gap-1">
+            <Link href="/apply" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.products}</Link>
+            <Link href="/info" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.features}</Link>
+            <Link href="/explore" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.rewards}</Link>
+            <Link href="/partner" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.agents}</Link>
+            <Link href="/info" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.help}</Link>
+            <a
+              href="https://app.ucard.cc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center justify-center rounded-md bg-[#1E3A8A] px-5 py-3 text-base font-semibold text-white transition hover:bg-[#1E3A8A]/90"
+            >
+              {t.getUcard} <ArrowRight className="ml-1 inline h-4 w-4" />
+            </a>
+          </div>
+        </nav>
+      )}
 
       {/* HERO */}
       <section className="relative mx-auto max-w-7xl px-6 pb-10 pt-8">
