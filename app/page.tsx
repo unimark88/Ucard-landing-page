@@ -26,7 +26,7 @@ const translations = {
   EN: {
     // Nav
     nav: { products: "Products", features: "Features", rewards: "Rewards", agents: "Agents", aboutUs: "About Us", help: "Help" },
-    getUcard: "Get Ucard",
+    getUcard: "Launch App",
     // Hero
     heroBadge: "The USDT Card for Everyday Life",
     heroTitle1: "Spend Your USDT",
@@ -138,7 +138,7 @@ const translations = {
   "中文": {
     // Nav
     nav: { products: "产品", features: "功能", rewards: "奖励", agents: "代理", aboutUs: "关于我们", help: "帮助" },
-    getUcard: "获取 Ucard",
+    getUcard: "启动应用",
     // Hero
     heroBadge: "日常生活的 USDT 卡",
     heroTitle1: "像现金一样",
@@ -232,7 +232,7 @@ const translations = {
     footerLegal: "法律",
     ucardCard: "Ucard 卡",
     app: "应用",
-    careers: "招聘",
+    careers: "��聘",
     blog: "博客",
     press: "新闻",
     helpCenter: "帮助中心",
@@ -250,7 +250,7 @@ const translations = {
   ID: {
     // Nav
     nav: { products: "Produk", features: "Fitur", rewards: "Hadiah", agents: "Agen", aboutUs: "Tentang Kami", help: "Bantuan" },
-    getUcard: "Dapatkan Ucard",
+    getUcard: "Luncurkan Aplikasi",
     // Hero
     heroBadge: "Kartu USDT untuk Kehidupan Sehari-hari",
     heroTitle1: "Belanjakan USDT Anda",
@@ -437,9 +437,14 @@ export default function UcardLandingPage() {
             )}
           </div>
           
-          <button className="cursor-pointer rounded-md bg-[#1E3A8A] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90">
+          <a
+            href="https://app.ucard.cc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer rounded-md bg-[#1E3A8A] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90"
+          >
             {t.getUcard} <ArrowRight className="ml-1 inline h-4 w-4" />
-          </button>
+          </a>
         </div>
       </header>
 
