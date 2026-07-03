@@ -7,22 +7,22 @@ const footerCols = [
     items: [
       { label: "USDT Card", href: "/apply" },
       { label: "How It Works", href: "/info" },
-      { label: "Rewards", href: "/explore" },
+      { label: "Rewards", href: "/rewards" },
     ],
   },
   {
     title: "Company",
     items: [
-      { label: "Partners", href: "/partner" },
-      { label: "About Us", href: "/info" },
+      { label: "Partners", href: "/agents" },
+      { label: "About Us", href: "/about" },
       { label: "Apply Now", href: "/apply" },
     ],
   },
   {
     title: "Support",
     items: [
-      { label: "Help Center", href: "/info" },
-      { label: "Contact Us", href: "/partner" },
+      { label: "Help Center", href: "/info#faq" },
+      { label: "Contact Us", href: "/agents" },
       { label: "Get Your Ucard", href: "/apply" },
     ],
   },

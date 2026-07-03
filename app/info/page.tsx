@@ -224,7 +224,7 @@ export default function InfoPage() {
       </section>
 
       {/* FAQ */}
-      <section className="mx-auto max-w-3xl px-6 pb-12">
+      <section id="faq" className="mx-auto max-w-3xl scroll-mt-24 px-6 pb-12">
         <h2 className="text-center text-2xl font-extrabold tracking-tight md:text-3xl">
           USDT Card FAQ
         </h2>

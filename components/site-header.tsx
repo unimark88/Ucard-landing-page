@@ -5,10 +5,12 @@ import Link from "next/link"
 import { ArrowRight, Menu, X } from "lucide-react"
 
 const navLinks = [
-  { label: "How It Works", href: "/info" },
-  { label: "Rewards", href: "/explore" },
-  { label: "Partners", href: "/partner" },
-  { label: "Get Ucard", href: "/apply" },
+  { label: "Products", href: "/apply" },
+  { label: "Features", href: "/info" },
+  { label: "Rewards", href: "/rewards" },
+  { label: "Agents", href: "/agents" },
+  { label: "About Us", href: "/about" },
+  { label: "Help", href: "/info#faq" },
 ]
 
 export function SiteHeader() {

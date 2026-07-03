@@ -469,10 +469,10 @@ export default function UcardLandingPage() {
         <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 lg:flex">
           <Link href="/apply" className="cursor-pointer transition hover:text-slate-900">{t.nav.products}</Link>
           <Link href="/info" className="cursor-pointer transition hover:text-slate-900">{t.nav.features}</Link>
-          <Link href="/explore" className="cursor-pointer transition hover:text-slate-900">{t.nav.rewards}</Link>
-          <Link href="/partner" className="cursor-pointer transition hover:text-slate-900">{t.nav.agents}</Link>
-          <Link href="/info" className="cursor-pointer transition hover:text-slate-900">{t.nav.aboutUs}</Link>
-          <Link href="/info" className="cursor-pointer transition hover:text-slate-900">{t.nav.help}</Link>
+          <Link href="/rewards" className="cursor-pointer transition hover:text-slate-900">{t.nav.rewards}</Link>
+          <Link href="/agents" className="cursor-pointer transition hover:text-slate-900">{t.nav.agents}</Link>
+          <Link href="/about" className="cursor-pointer transition hover:text-slate-900">{t.nav.aboutUs}</Link>
+          <Link href="/info#faq" className="cursor-pointer transition hover:text-slate-900">{t.nav.help}</Link>
         </nav>
 
         <div className="flex items-center gap-4">
@@ -539,9 +539,10 @@ export default function UcardLandingPage() {
           <div className="mx-auto flex max-w-7xl flex-col gap-1">
             <Link href="/apply" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.products}</Link>
             <Link href="/info" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.features}</Link>
-            <Link href="/explore" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.rewards}</Link>
-            <Link href="/partner" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.agents}</Link>
-            <Link href="/info" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.help}</Link>
+            <Link href="/rewards" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.rewards}</Link>
+            <Link href="/agents" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.agents}</Link>
+            <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.aboutUs}</Link>
+            <Link href="/info#faq" onClick={() => setMobileMenuOpen(false)} className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 transition hover:bg-slate-100">{t.nav.help}</Link>
             <a
               href="https://app.ucard.cc"
               target="_blank"
@@ -773,7 +774,7 @@ export default function UcardLandingPage() {
             <p className="mt-2 text-sm text-slate-600">
               {t.rewardsDesc}
             </p>
-            <Link href="/explore" className="mx-auto mt-4 inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 md:mx-0">
+            <Link href="/rewards" className="mx-auto mt-4 inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 md:mx-0">
               {t.exploreRewards} <ArrowRight size={14} />
             </Link>
           </div>
@@ -850,7 +851,7 @@ export default function UcardLandingPage() {
               </p>
             </div>
           </div>
-          <Link href="/partner" className="cursor-pointer rounded-md bg-[#1E3A8A] px-6 py-3 font-semibold text-white transition hover:bg-[#1E3A8A]/90">
+          <Link href="/agents" className="cursor-pointer rounded-md bg-[#1E3A8A] px-6 py-3 font-semibold text-white transition hover:bg-[#1E3A8A]/90">
             {t.becomePartner} <ArrowRight className="ml-1 inline h-4 w-4" />
           </Link>
         </div>

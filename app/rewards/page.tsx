@@ -26,12 +26,12 @@ export const metadata: Metadata = {
     "crypto debit card cashback",
     "stablecoin rewards",
   ],
-  alternates: { canonical: "/explore" },
+  alternates: { canonical: "/rewards" },
   openGraph: {
     title: "USDT Card Rewards & Cashback | Ucard",
     description:
       "Earn points and cashback every time you spend USDT, complete quests, level up, and invite friends with Ucard.",
-    url: "/explore",
+    url: "/rewards",
     images: [{ url: "/images/og-image.png", width: 1200, height: 630, alt: "Ucard USDT card rewards" }],
   },
 }

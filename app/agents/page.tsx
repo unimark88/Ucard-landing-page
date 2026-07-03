@@ -26,12 +26,12 @@ export const metadata: Metadata = {
     "USDT Visa card reseller",
     "stablecoin card partner program",
   ],
-  alternates: { canonical: "/partner" },
+  alternates: { canonical: "/agents" },
   openGraph: {
     title: "Become a Partner or Agent | Ucard",
     description:
       "Earn commissions by distributing the Ucard USDT Visa card and expanding crypto payments in your market.",
-    url: "/partner",
+    url: "/agents",
     images: [{ url: "/images/og-image.png", width: 1200, height: 630, alt: "Become a Ucard partner" }],
   },
 }
