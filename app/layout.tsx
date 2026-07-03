@@ -10,7 +10,7 @@ const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
   : process.env.VERCEL_URL 
     ? `https://${process.env.VERCEL_URL}`
-    : 'https://ucard.app'
+    : 'https://ucard.cc'
 
 export const metadata: Metadata = {
   title: {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://ucard.app',
+    url: 'https://ucard.cc',
     siteName: 'Ucard',
     title: 'Ucard | USDT Debit Card',
     description: 'Spend USDT globally, earn yield on your balance, and manage funds on-chain with a secure USDT debit card.',
@@ -92,10 +92,36 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': `${siteUrl}/#organization`,
+        name: 'Ucard',
+        url: siteUrl,
+        logo: `${siteUrl}/images/ucard-logo.png`,
+        description:
+          'Ucard is a USDT Visa and Mastercard debit card that lets you spend stablecoins anywhere, earn yield, and stay on-chain.',
+      },
+      {
+        '@type': 'WebSite',
+        '@id': `${siteUrl}/#website`,
+        url: siteUrl,
+        name: 'Ucard | USDT Visa Card',
+        publisher: { '@id': `${siteUrl}/#organization` },
+      },
+    ],
+  }
+
   return (
-    <html lang="en">
+    <html lang="en" className="bg-background">
       <body className="font-sans antialiased">
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
