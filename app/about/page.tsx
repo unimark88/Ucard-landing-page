@@ -60,36 +60,7 @@ const stats = [
   { value: "24/7", label: "Support & monitoring" },
 ]
 
-const faqs = [
-  {
-    q: "What is Ucard?",
-    a: "Ucard is a crypto debit card platform that lets you spend USDT stablecoins anywhere Visa and Mastercard are accepted. Our mission is to bridge on-chain funds with everyday spending — securely and compliantly.",
-  },
-  {
-    q: "Who is Ucard for?",
-    a: "Ucard is built for anyone who holds USDT and wants to spend it in the real world — from crypto natives and freelancers paid in stablecoins to travelers and everyday shoppers.",
-  },
-  {
-    q: "Is Ucard regulated and compliant?",
-    a: "Yes. Ucard follows full KYC and AML procedures and partners with regulated card issuers so your USDT Visa card meets global compliance standards.",
-  },
-  {
-    q: "How do I get started with Ucard?",
-    a: "Getting a USDT Visa card is simple — apply online, complete verification, top up with USDT, and start spending anywhere Visa and Mastercard are accepted.",
-  },
-]
-
 export default function AboutPage() {
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  }
-
   return (
     <main className="min-h-screen bg-[#F8FAFC] text-slate-950">
       <SiteHeader />
@@ -175,19 +146,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="mx-auto max-w-3xl scroll-mt-24 px-6 pb-12">
-        <h2 className="text-center text-2xl font-extrabold tracking-tight md:text-3xl">About & Help FAQ</h2>
-        <div className="mt-6 space-y-4">
-          {faqs.map((f) => (
-            <div key={f.q} className="rounded-2xl bg-white p-6 shadow-sm">
-              <h3 className="font-bold text-slate-900">{f.q}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">{f.a}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="mx-auto max-w-7xl px-6 pb-12">
         <div className="overflow-hidden rounded-2xl bg-gradient-to-r from-[#1E3A8A] to-[#2563EB] px-6 py-8 text-center text-white md:px-8 md:py-10">
@@ -204,8 +162,6 @@ export default function AboutPage() {
       </section>
 
       <SiteFooter />
-
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     </main>
   )
 }
