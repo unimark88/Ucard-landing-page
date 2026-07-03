@@ -27,7 +27,7 @@ const languages = [
 const translations = {
   EN: {
     // Nav
-    nav: { products: "Apply", features: "Features", rewards: "Rewards", agents: "Agents", aboutUs: "About Us", help: "Help" },
+    nav: { products: "Apply", features: "Features", rewards: "Rewards", agents: "Partner", aboutUs: "About Us", help: "Info" },
     getUcard: "Launch App",
     // Hero
     heroBadge: "The USDT Card for Everyday Life",
@@ -163,7 +163,7 @@ const translations = {
   },
   "中文": {
     // Nav
-    nav: { products: "申请", features: "功能", rewards: "奖励", agents: "代理", aboutUs: "关于我们", help: "帮助" },
+    nav: { products: "申请", features: "功能", rewards: "奖励", agents: "合作伙伴", aboutUs: "关于我们", help: "信息" },
     getUcard: "启动应用",
     // Hero
     heroBadge: "日常生活的 USDT 卡",
@@ -213,7 +213,7 @@ const translations = {
     profile: "个人资料",
     // Trust bar
     trustTitle: "受监管和可信的基础设施",
-    trustDesc: "由持牌合作伙伴和全球支付网络提��支持。完全符合 KYC/AML 标准，具有安全的链上透明度。",
+    trustDesc: "由持牌合作伙伴��全球支付网络提��支持。完全符合 KYC/AML 标准，具有安全的链上透明度。",
     globalNetwork: "全球支付网络",
     licensedPartner: "持牌合作伙伴",
     verified: "已验证",
@@ -299,7 +299,7 @@ const translations = {
   },
   ID: {
     // Nav
-    nav: { products: "Ajukan", features: "Fitur", rewards: "Hadiah", agents: "Agen", aboutUs: "Tentang Kami", help: "Bantuan" },
+    nav: { products: "Ajukan", features: "Fitur", rewards: "Hadiah", agents: "Partner", aboutUs: "Tentang Kami", help: "Info" },
     getUcard: "Luncurkan Aplikasi",
     // Hero
     heroBadge: "Kartu USDT untuk Kehidupan Sehari-hari",

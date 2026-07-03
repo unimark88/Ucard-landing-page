@@ -8,9 +8,9 @@ const navLinks = [
   { label: "Apply", href: "/apply" },
   { label: "Features", href: "/features" },
   { label: "Rewards", href: "/rewards" },
-  { label: "Agents", href: "/partner" },
+  { label: "Partner", href: "/partner" },
   { label: "About Us", href: "/about" },
-  { label: "Help", href: "/info" },
+  { label: "Info", href: "/info" },
 ]
 
 export function SiteHeader() {
