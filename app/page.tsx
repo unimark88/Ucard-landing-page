@@ -643,56 +643,6 @@ export default function UcardLandingPage() {
         </div>
       </section>
 
-      {/* LEARN MORE */}
-      <section id="learn-more" className="mx-auto max-w-7xl scroll-mt-24 px-6 pb-10">
-        <div className="rounded-2xl bg-[#EFF6FF] p-6 md:p-10">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
-              {t.learnMoreSubtitle}
-            </p>
-            <h2 className="mt-2 text-2xl font-extrabold leading-tight tracking-tight md:text-3xl">
-              {t.learnMoreTitle}
-            </h2>
-            <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
-              {t.learnMoreDesc}
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
-            {[
-              { icon: CreditCard, title: t.learnMorePoint1Title, desc: t.learnMorePoint1Desc },
-              { icon: Globe2, title: t.learnMorePoint2Title, desc: t.learnMorePoint2Desc },
-              { icon: TrendingUp, title: t.learnMorePoint3Title, desc: t.learnMorePoint3Desc },
-            ].map((point, i) => (
-              <div key={i} className="flex gap-3 rounded-xl bg-white p-4 shadow-sm">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-50">
-                  <point.icon className="h-5 w-5 text-[#2563EB]" />
-                </div>
-                <div>
-                  <h3 className="text-sm font-bold text-slate-900">{point.title}</h3>
-                  <p className="mt-0.5 text-sm leading-relaxed text-slate-500">{point.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link
-              href="/apply"
-              className="inline-flex cursor-pointer items-center gap-2 rounded-md bg-[#1E3A8A] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90 md:text-base"
-            >
-              {t.getYourUcard} <ArrowRight size={16} />
-            </Link>
-            <Link
-              href="/info"
-              className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 md:text-base"
-            >
-              {t.learnMore}
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* FEATURES */}
       <section className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-10">
         <h2 className="relative text-center text-2xl font-extrabold tracking-tight md:text-3xl">
