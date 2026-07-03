@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useState, useRef, useEffect } from "react"
 import {
   ArrowRight,
@@ -15,7 +16,6 @@ import {
   Star,
   Check,
 } from "lucide-react"
-import { SignupForm } from "@/components/signup-form"
 
 const languages = [
   { code: "EN", name: "English", flag: "🇺🇸" },
@@ -465,12 +465,12 @@ export default function UcardLandingPage() {
         </div>
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 lg:flex">
-          <a href="#" className="cursor-pointer transition hover:text-slate-900">{t.nav.products}</a>
-          <a href="#" className="cursor-pointer transition hover:text-slate-900">{t.nav.features}</a>
-          <a href="#" className="cursor-pointer transition hover:text-slate-900">{t.nav.rewards}</a>
-          <a href="#" className="cursor-pointer transition hover:text-slate-900">{t.nav.agents}</a>
-          <a href="#" className="cursor-pointer transition hover:text-slate-900">{t.nav.aboutUs}</a>
-          <a href="#" className="cursor-pointer transition hover:text-slate-900">{t.nav.help}</a>
+          <Link href="/apply" className="cursor-pointer transition hover:text-slate-900">{t.nav.products}</Link>
+          <Link href="/info" className="cursor-pointer transition hover:text-slate-900">{t.nav.features}</Link>
+          <Link href="/explore" className="cursor-pointer transition hover:text-slate-900">{t.nav.rewards}</Link>
+          <Link href="/partner" className="cursor-pointer transition hover:text-slate-900">{t.nav.agents}</Link>
+          <Link href="/info" className="cursor-pointer transition hover:text-slate-900">{t.nav.aboutUs}</Link>
+          <Link href="/info" className="cursor-pointer transition hover:text-slate-900">{t.nav.help}</Link>
         </nav>
 
         <div className="flex items-center gap-4">
@@ -547,12 +547,12 @@ export default function UcardLandingPage() {
   >
     {t.launchApp} <ArrowRight size={16} />
   </a>
-  <a
-    href="#learn-more"
+  <Link
+    href="/info"
     className="cursor-pointer rounded-md border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 md:px-6 md:py-3 md:text-base"
   >
     {t.learnMore}
-  </a>
+  </Link>
   </div>
 
             <div className="mt-6 flex items-center justify-center gap-4 lg:justify-start lg:mt-8">
@@ -645,8 +645,8 @@ export default function UcardLandingPage() {
 
       {/* LEARN MORE */}
       <section id="learn-more" className="mx-auto max-w-7xl scroll-mt-24 px-6 pb-10">
-        <div className="grid grid-cols-1 items-start gap-8 rounded-2xl bg-[#EFF6FF] p-6 md:p-10 lg:grid-cols-2 lg:gap-12">
-          <div>
+        <div className="rounded-2xl bg-[#EFF6FF] p-6 md:p-10">
+          <div className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-bold uppercase tracking-widest text-[#2563EB]">
               {t.learnMoreSubtitle}
             </p>
@@ -656,50 +656,39 @@ export default function UcardLandingPage() {
             <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
               {t.learnMoreDesc}
             </p>
-
-            <div className="mt-6 flex flex-col gap-4">
-              {[
-                { icon: CreditCard, title: t.learnMorePoint1Title, desc: t.learnMorePoint1Desc },
-                { icon: Globe2, title: t.learnMorePoint2Title, desc: t.learnMorePoint2Desc },
-                { icon: TrendingUp, title: t.learnMorePoint3Title, desc: t.learnMorePoint3Desc },
-              ].map((point, i) => (
-                <div key={i} className="flex gap-3">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white shadow-sm">
-                    <point.icon className="h-5 w-5 text-[#2563EB]" />
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-bold text-slate-900">{point.title}</h3>
-                    <p className="mt-0.5 text-sm leading-relaxed text-slate-500">{point.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <a
-              href="#get-card"
-              className="mt-8 inline-flex cursor-pointer items-center gap-2 rounded-md bg-[#1E3A8A] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90 md:text-base"
-            >
-              {t.getYourUcard} <ArrowRight size={16} />
-            </a>
           </div>
 
-          <div id="get-card" className="scroll-mt-24">
-            <SignupForm
-              labels={{
-                title: t.formTitle,
-                subtitle: t.formSubtitle,
-                name: t.formName,
-                namePlaceholder: t.formNamePlaceholder,
-                email: t.formEmail,
-                emailPlaceholder: t.formEmailPlaceholder,
-                country: t.formCountry,
-                countryPlaceholder: t.formCountryPlaceholder,
-                submit: t.formSubmit,
-                submitting: t.formSubmitting,
-                successTitle: t.formSuccessTitle,
-                successDesc: t.formSuccessDesc,
-              }}
-            />
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {[
+              { icon: CreditCard, title: t.learnMorePoint1Title, desc: t.learnMorePoint1Desc },
+              { icon: Globe2, title: t.learnMorePoint2Title, desc: t.learnMorePoint2Desc },
+              { icon: TrendingUp, title: t.learnMorePoint3Title, desc: t.learnMorePoint3Desc },
+            ].map((point, i) => (
+              <div key={i} className="flex gap-3 rounded-xl bg-white p-4 shadow-sm">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-50">
+                  <point.icon className="h-5 w-5 text-[#2563EB]" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-bold text-slate-900">{point.title}</h3>
+                  <p className="mt-0.5 text-sm leading-relaxed text-slate-500">{point.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <Link
+              href="/apply"
+              className="inline-flex cursor-pointer items-center gap-2 rounded-md bg-[#1E3A8A] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:bg-[#1E3A8A]/90 md:text-base"
+            >
+              {t.getYourUcard} <ArrowRight size={16} />
+            </Link>
+            <Link
+              href="/info"
+              className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 md:text-base"
+            >
+              {t.learnMore}
+            </Link>
           </div>
         </div>
       </section>
@@ -801,9 +790,9 @@ export default function UcardLandingPage() {
             <p className="mt-2 text-sm text-slate-600">
               {t.rewardsDesc}
             </p>
-            <button className="mx-auto mt-4 inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 md:mx-0">
+            <Link href="/explore" className="mx-auto mt-4 inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 md:mx-0">
               {t.exploreRewards} <ArrowRight size={14} />
-            </button>
+            </Link>
           </div>
 
           <div className="flex items-center justify-center md:w-[70%]">
@@ -878,9 +867,9 @@ export default function UcardLandingPage() {
               </p>
             </div>
           </div>
-          <button className="cursor-pointer rounded-md bg-[#1E3A8A] px-6 py-3 font-semibold text-white transition hover:bg-[#1E3A8A]/90">
+          <Link href="/partner" className="cursor-pointer rounded-md bg-[#1E3A8A] px-6 py-3 font-semibold text-white transition hover:bg-[#1E3A8A]/90">
             {t.becomePartner} <ArrowRight className="ml-1 inline h-4 w-4" />
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -891,9 +880,9 @@ export default function UcardLandingPage() {
             {t.ctaTitle}
           </h2>
           <p className="mt-2 text-blue-200">{t.ctaSubtitle}</p>
-  <a href="#get-card" className="mt-5 inline-flex cursor-pointer items-center gap-2 rounded-md bg-white px-6 py-3 font-bold text-[#1E3A8A] transition hover:bg-slate-100">
+  <Link href="/apply" className="mt-5 inline-flex cursor-pointer items-center gap-2 rounded-md bg-white px-6 py-3 font-bold text-[#1E3A8A] transition hover:bg-slate-100">
     {t.getYourUcard} <ArrowRight size={18} />
-  </a>
+  </Link>
         </div>
       </section>
 
